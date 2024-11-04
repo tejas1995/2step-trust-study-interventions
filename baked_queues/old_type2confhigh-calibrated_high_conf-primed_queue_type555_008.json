@@ -6,7 +6,7 @@
     "option2": "Solar-collection panels",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "95%",
+    "ai_confidence": "81%",
     "ai_is_correct": true
   },
   {
@@ -16,7 +16,7 @@
     "option2": "The elements in the group are very unreactive metals.",
     "correct_option": 1,
     "ai_prediction": 1,
-    "ai_confidence": "69%",
+    "ai_confidence": "88%",
     "ai_is_correct": true
   },
   {
@@ -26,7 +26,7 @@
     "option2": "They create energy.",
     "correct_option": 1,
     "ai_prediction": 1,
-    "ai_confidence": "76%",
+    "ai_confidence": "86%",
     "ai_is_correct": true
   },
   {
@@ -36,7 +36,7 @@
     "option2": "Weathering changed the layering of the rocks.",
     "correct_option": 1,
     "ai_prediction": 1,
-    "ai_confidence": "97%",
+    "ai_confidence": "68%",
     "ai_is_correct": true
   },
   {
@@ -46,7 +46,7 @@
     "option2": "The rate of heart beats slows.",
     "correct_option": 1,
     "ai_prediction": 1,
-    "ai_confidence": "85%",
+    "ai_confidence": "81%",
     "ai_is_correct": true
   },
   {
@@ -106,17 +106,17 @@
     "option2": "eating fish",
     "correct_option": 1,
     "ai_prediction": 1,
-    "ai_confidence": "81%",
+    "ai_confidence": "73%",
     "ai_is_correct": true
   },
   {
-    "ai2arc_qid": "MDSA_2007_4_52",
-    "question": "Plants and animals need food for growth. What happens to most of the food that plants produce?",
-    "option1": "Food is used to absorb sunlight.",
-    "option2": "Food is stored for future use.",
-    "correct_option": 2,
-    "ai_prediction": 2,
-    "ai_confidence": "91%",
+    "ai2arc_qid": "Mercury_7166093",
+    "question": "Plants can help prevent erosion or contribute to erosion. Which describes how plants could contribute to erosion?",
+    "option1": "Plant roots grow in rocks, breaking the rocks.",
+    "option2": "Plants slow the runoff of water and soil.",
+    "correct_option": 1,
+    "ai_prediction": 1,
+    "ai_confidence": "75%",
     "ai_is_correct": true
   },
   {
@@ -126,7 +126,7 @@
     "option2": "A definite volume.",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "87%",
+    "ai_confidence": "92%",
     "ai_is_correct": true
   },
   {
@@ -136,7 +136,7 @@
     "option2": "The ability of offspring to reproduce",
     "correct_option": 2,
     "ai_prediction": 1,
-    "ai_confidence": "83%",
+    "ai_confidence": "76%",
     "ai_is_correct": false
   },
   {
@@ -145,9 +145,9 @@
     "option1": "is a form of bacteria.",
     "option2": "is made of multiple cells.",
     "correct_option": 2,
-    "ai_prediction": 1,
-    "ai_confidence": "61%",
-    "ai_is_correct": false
+    "ai_prediction": 2,
+    "ai_confidence": "82%",
+    "ai_is_correct": true
   },
   {
     "ai2arc_qid": "Mercury_7003955",
@@ -156,7 +156,7 @@
     "option2": "permanent positive charges",
     "correct_option": 1,
     "ai_prediction": 2,
-    "ai_confidence": "82%",
+    "ai_confidence": "83%",
     "ai_is_correct": false
   },
   {
@@ -166,7 +166,7 @@
     "option2": "water pressure",
     "correct_option": 2,
     "ai_prediction": 1,
-    "ai_confidence": "71%",
+    "ai_confidence": "83%",
     "ai_is_correct": false
   },
   {
@@ -176,7 +176,7 @@
     "option2": "The temperature of the air",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "60%",
+    "ai_confidence": "76%",
     "ai_is_correct": true
   },
   {
@@ -186,7 +186,7 @@
     "option2": "digging a new landfill",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "62%",
+    "ai_confidence": "69%",
     "ai_is_correct": true
   },
   {
@@ -196,16 +196,16 @@
     "option2": "convection",
     "correct_option": 1,
     "ai_prediction": 1,
-    "ai_confidence": "71%",
+    "ai_confidence": "63%",
     "ai_is_correct": true
   },
   {
-    "ai2arc_qid": "Mercury_SC_408415",
-    "question": "Cindy learned that trees release gases into to the air during photosynthesis. What gas does a tree release?",
-    "option1": "Oxygen",
-    "option2": "Carbon dioxide",
-    "correct_option": 1,
-    "ai_prediction": 2,
+    "ai2arc_qid": "Mercury_7188073",
+    "question": "Which parts of a plant function as an organ?",
+    "option1": "Spores",
+    "option2": "Leaves",
+    "correct_option": 2,
+    "ai_prediction": 1,
     "ai_confidence": "87%",
     "ai_is_correct": false
   },
@@ -250,13 +250,13 @@
     "ai_is_correct": false
   },
   {
-    "ai2arc_qid": "Mercury_7166093",
-    "question": "Plants can help prevent erosion or contribute to erosion. Which describes how plants could contribute to erosion?",
-    "option1": "Plant roots grow in rocks, breaking the rocks.",
-    "option2": "Plants slow the runoff of water and soil.",
-    "correct_option": 1,
-    "ai_prediction": 1,
-    "ai_confidence": "66%",
+    "ai2arc_qid": "MDSA_2007_4_52",
+    "question": "Plants and animals need food for growth. What happens to most of the food that plants produce?",
+    "option1": "Food is used to absorb sunlight.",
+    "option2": "Food is stored for future use.",
+    "correct_option": 2,
+    "ai_prediction": 2,
+    "ai_confidence": "74%",
     "ai_is_correct": true
   },
   {
@@ -266,7 +266,7 @@
     "option2": "Use a chemical spill kit",
     "correct_option": 1,
     "ai_prediction": 1,
-    "ai_confidence": "82%",
+    "ai_confidence": "78%",
     "ai_is_correct": true
   },
   {
@@ -276,7 +276,7 @@
     "option2": "The amount of water vapor increases as the atmospheric temperature increases.",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "78%",
+    "ai_confidence": "59%",
     "ai_is_correct": true
   },
   {
@@ -286,7 +286,7 @@
     "option2": "Pulley",
     "correct_option": 1,
     "ai_prediction": 2,
-    "ai_confidence": "92%",
+    "ai_confidence": "70%",
     "ai_is_correct": false
   },
   {
@@ -296,7 +296,7 @@
     "option2": "Rain or snow begins to fall.",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "72%",
+    "ai_confidence": "74%",
     "ai_is_correct": true
   }
 ]

@@ -6,7 +6,7 @@
     "option2": "They create energy.",
     "correct_option": 1,
     "ai_prediction": 1,
-    "ai_confidence": "93%",
+    "ai_confidence": "59%",
     "ai_is_correct": true
   },
   {
@@ -16,7 +16,7 @@
     "option2": "High elevations of deserts.",
     "correct_option": 1,
     "ai_prediction": 1,
-    "ai_confidence": "95%",
+    "ai_confidence": "74%",
     "ai_is_correct": true
   },
   {
@@ -35,18 +35,18 @@
     "option1": "A response to crowding.",
     "option2": "An instinctive behavior.",
     "correct_option": 2,
-    "ai_prediction": 1,
-    "ai_confidence": "56%",
-    "ai_is_correct": false
+    "ai_prediction": 2,
+    "ai_confidence": "82%",
+    "ai_is_correct": true
   },
   {
-    "ai2arc_qid": "Mercury_7188073",
-    "question": "Which parts of a plant function as an organ?",
-    "option1": "Spores",
-    "option2": "Leaves",
-    "correct_option": 2,
-    "ai_prediction": 2,
-    "ai_confidence": "88%",
+    "ai2arc_qid": "Mercury_SC_408415",
+    "question": "Cindy learned that trees release gases into to the air during photosynthesis. What gas does a tree release?",
+    "option1": "Oxygen",
+    "option2": "Carbon dioxide",
+    "correct_option": 1,
+    "ai_prediction": 1,
+    "ai_confidence": "71%",
     "ai_is_correct": true
   },
   {
@@ -106,7 +106,7 @@
     "option2": "The amount of water vapor increases as the atmospheric temperature increases.",
     "correct_option": 2,
     "ai_prediction": 1,
-    "ai_confidence": "59%",
+    "ai_confidence": "66%",
     "ai_is_correct": false
   },
   {
@@ -116,7 +116,7 @@
     "option2": "Pulley",
     "correct_option": 1,
     "ai_prediction": 2,
-    "ai_confidence": "83%",
+    "ai_confidence": "80%",
     "ai_is_correct": false
   },
   {
@@ -126,7 +126,7 @@
     "option2": "is made of multiple cells.",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "70%",
+    "ai_confidence": "97%",
     "ai_is_correct": true
   },
   {
@@ -136,17 +136,17 @@
     "option2": "By creating a hole in the ozone layer.",
     "correct_option": 1,
     "ai_prediction": 1,
-    "ai_confidence": "68%",
+    "ai_confidence": "66%",
     "ai_is_correct": true
   },
   {
-    "ai2arc_qid": "Mercury_7166093",
-    "question": "Plants can help prevent erosion or contribute to erosion. Which describes how plants could contribute to erosion?",
-    "option1": "Plant roots grow in rocks, breaking the rocks.",
-    "option2": "Plants slow the runoff of water and soil.",
-    "correct_option": 1,
-    "ai_prediction": 2,
-    "ai_confidence": "73%",
+    "ai2arc_qid": "MDSA_2007_4_52",
+    "question": "Plants and animals need food for growth. What happens to most of the food that plants produce?",
+    "option1": "Food is used to absorb sunlight.",
+    "option2": "Food is stored for future use.",
+    "correct_option": 2,
+    "ai_prediction": 1,
+    "ai_confidence": "83%",
     "ai_is_correct": false
   },
   {
@@ -155,18 +155,18 @@
     "option1": "conduction",
     "option2": "convection",
     "correct_option": 1,
-    "ai_prediction": 1,
-    "ai_confidence": "95%",
-    "ai_is_correct": true
+    "ai_prediction": 2,
+    "ai_confidence": "65%",
+    "ai_is_correct": false
   },
   {
-    "ai2arc_qid": "Mercury_SC_408415",
-    "question": "Cindy learned that trees release gases into to the air during photosynthesis. What gas does a tree release?",
-    "option1": "Oxygen",
-    "option2": "Carbon dioxide",
-    "correct_option": 1,
-    "ai_prediction": 2,
-    "ai_confidence": "78%",
+    "ai2arc_qid": "Mercury_7188073",
+    "question": "Which parts of a plant function as an organ?",
+    "option1": "Spores",
+    "option2": "Leaves",
+    "correct_option": 2,
+    "ai_prediction": 1,
+    "ai_confidence": "79%",
     "ai_is_correct": false
   },
   {
@@ -176,7 +176,7 @@
     "option2": "Blizzard",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "73%",
+    "ai_confidence": "65%",
     "ai_is_correct": true
   },
   {
@@ -185,9 +185,9 @@
     "option1": "Albumen",
     "option2": "Yolk sac",
     "correct_option": 1,
-    "ai_prediction": 1,
-    "ai_confidence": "86%",
-    "ai_is_correct": true
+    "ai_prediction": 2,
+    "ai_confidence": "54%",
+    "ai_is_correct": false
   },
   {
     "ai2arc_qid": "MDSA_2007_8_47",
@@ -196,7 +196,7 @@
     "option2": "an aluminum core",
     "correct_option": 1,
     "ai_prediction": 1,
-    "ai_confidence": "77%",
+    "ai_confidence": "74%",
     "ai_is_correct": true
   },
   {
@@ -240,12 +240,12 @@
     "ai_is_correct": false
   },
   {
-    "ai2arc_qid": "Mercury_SC_415366",
-    "question": "Trees need oxygen. Roots close to the surface of the ground take in the oxygen the tree needs. Which organisms help trees get oxygen?",
-    "option1": "Woodpeckers making holes in the tree.",
-    "option2": "Earthworms making holes in the ground near the tree.",
-    "correct_option": 2,
-    "ai_prediction": 1,
+    "ai2arc_qid": "Mercury_7131950",
+    "question": "Emily made a chart that included physical changes and chemical changes. Which change should be categorized as a chemical change?",
+    "option1": "Iron becomes rusty",
+    "option2": "Lake water evaporates",
+    "correct_option": 1,
+    "ai_prediction": 2,
     "ai_confidence": "91%",
     "ai_is_correct": false
   },
@@ -256,7 +256,7 @@
     "option2": "Rain or snow begins to fall.",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "87%",
+    "ai_confidence": "62%",
     "ai_is_correct": true
   },
   {
@@ -266,7 +266,7 @@
     "option2": "Use a chemical spill kit",
     "correct_option": 1,
     "ai_prediction": 1,
-    "ai_confidence": "59%",
+    "ai_confidence": "84%",
     "ai_is_correct": true
   },
   {
@@ -276,7 +276,7 @@
     "option2": "The ability of offspring to reproduce",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "64%",
+    "ai_confidence": "59%",
     "ai_is_correct": true
   },
   {
@@ -286,7 +286,7 @@
     "option2": "A definite volume.",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "94%",
+    "ai_confidence": "74%",
     "ai_is_correct": true
   },
   {
@@ -295,8 +295,8 @@
     "option1": "strong polarity",
     "option2": "low pH",
     "correct_option": 1,
-    "ai_prediction": 2,
-    "ai_confidence": "72%",
-    "ai_is_correct": false
+    "ai_prediction": 1,
+    "ai_confidence": "85%",
+    "ai_is_correct": true
   }
 ]

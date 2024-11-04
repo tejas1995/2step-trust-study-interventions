@@ -6,7 +6,7 @@
     "option2": "Wind farms can disrupt migrating wildlife.",
     "correct_option": 2,
     "ai_prediction": 1,
-    "ai_confidence": "56%",
+    "ai_confidence": "75%",
     "ai_is_correct": false
   },
   {
@@ -26,7 +26,7 @@
     "option2": "The liver",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "85%",
+    "ai_confidence": "84%",
     "ai_is_correct": true
   },
   {
@@ -46,7 +46,7 @@
     "option2": "Loamy soils because they contain sand and clay.",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "76%",
+    "ai_confidence": "73%",
     "ai_is_correct": true
   },
   {
@@ -80,34 +80,34 @@
     "ai_is_correct": false
   },
   {
-    "ai2arc_qid": "Mercury_SC_408415",
-    "question": "Cindy learned that trees release gases into to the air during photosynthesis. What gas does a tree release?",
-    "option1": "Oxygen",
-    "option2": "Carbon dioxide",
-    "correct_option": 1,
-    "ai_prediction": 2,
+    "ai2arc_qid": "Mercury_7188073",
+    "question": "Which parts of a plant function as an organ?",
+    "option1": "Spores",
+    "option2": "Leaves",
+    "correct_option": 2,
+    "ai_prediction": 1,
     "ai_confidence": "90%",
     "ai_is_correct": false
   },
   {
-    "ai2arc_qid": "Mercury_SC_415366",
-    "question": "Trees need oxygen. Roots close to the surface of the ground take in the oxygen the tree needs. Which organisms help trees get oxygen?",
-    "option1": "Woodpeckers making holes in the tree.",
-    "option2": "Earthworms making holes in the ground near the tree.",
-    "correct_option": 2,
-    "ai_prediction": 1,
+    "ai2arc_qid": "Mercury_7131950",
+    "question": "Emily made a chart that included physical changes and chemical changes. Which change should be categorized as a chemical change?",
+    "option1": "Iron becomes rusty",
+    "option2": "Lake water evaporates",
+    "correct_option": 1,
+    "ai_prediction": 2,
     "ai_confidence": "94%",
     "ai_is_correct": false
   },
   {
-    "ai2arc_qid": "Mercury_7166093",
-    "question": "Plants can help prevent erosion or contribute to erosion. Which describes how plants could contribute to erosion?",
-    "option1": "Plant roots grow in rocks, breaking the rocks.",
-    "option2": "Plants slow the runoff of water and soil.",
-    "correct_option": 1,
+    "ai2arc_qid": "MDSA_2007_4_52",
+    "question": "Plants and animals need food for growth. What happens to most of the food that plants produce?",
+    "option1": "Food is used to absorb sunlight.",
+    "option2": "Food is stored for future use.",
+    "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "54%",
-    "ai_is_correct": false
+    "ai_confidence": "96%",
+    "ai_is_correct": true
   },
   {
     "ai2arc_qid": "Mercury_7043995",
@@ -116,7 +116,7 @@
     "option2": "The ability of offspring to reproduce",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "76%",
+    "ai_confidence": "85%",
     "ai_is_correct": true
   },
   {
@@ -125,9 +125,9 @@
     "option1": "By adding particle pollution.",
     "option2": "By creating a hole in the ozone layer.",
     "correct_option": 1,
-    "ai_prediction": 1,
-    "ai_confidence": "89%",
-    "ai_is_correct": true
+    "ai_prediction": 2,
+    "ai_confidence": "75%",
+    "ai_is_correct": false
   },
   {
     "ai2arc_qid": "Mercury_7132195",
@@ -136,7 +136,7 @@
     "option2": "Pulley",
     "correct_option": 1,
     "ai_prediction": 1,
-    "ai_confidence": "79%",
+    "ai_confidence": "63%",
     "ai_is_correct": true
   },
   {
@@ -145,9 +145,9 @@
     "option1": "opening garbage can lids",
     "option2": "eating fish",
     "correct_option": 1,
-    "ai_prediction": 2,
-    "ai_confidence": "60%",
-    "ai_is_correct": false
+    "ai_prediction": 1,
+    "ai_confidence": "86%",
+    "ai_is_correct": true
   },
   {
     "ai2arc_qid": "Mercury_SC_400519",
@@ -156,7 +156,7 @@
     "option2": "Weathering changed the layering of the rocks.",
     "correct_option": 1,
     "ai_prediction": 1,
-    "ai_confidence": "70%",
+    "ai_confidence": "64%",
     "ai_is_correct": true
   },
   {
@@ -166,17 +166,17 @@
     "option2": "water pressure",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "80%",
+    "ai_confidence": "71%",
     "ai_is_correct": true
   },
   {
-    "ai2arc_qid": "Mercury_SC_400050",
-    "question": "What happens when the temperature in the house is cooler than the temperature selected on the thermostat?",
-    "option1": "The furnace will overheat.",
-    "option2": "The furnace will automatically turn on.",
+    "ai2arc_qid": "NCEOGA_2013_8_40",
+    "question": "How would smoking tobacco most likely have a negative impact on the ability of an individual to succeed at physical activities?",
+    "option1": "It decreases the speed and power of muscle contractions.",
+    "option2": "It decreases stamina and cardiovascular efficiency.",
     "correct_option": 2,
     "ai_prediction": 1,
-    "ai_confidence": "62%",
+    "ai_confidence": "59%",
     "ai_is_correct": false
   },
   {
@@ -185,9 +185,9 @@
     "option1": "is more elastic.",
     "option2": "has a higher density.",
     "correct_option": 2,
-    "ai_prediction": 2,
-    "ai_confidence": "95%",
-    "ai_is_correct": true
+    "ai_prediction": 1,
+    "ai_confidence": "87%",
+    "ai_is_correct": false
   },
   {
     "ai2arc_qid": "Mercury_7274348",
@@ -196,7 +196,7 @@
     "option2": "The elements in the group are very unreactive metals.",
     "correct_option": 1,
     "ai_prediction": 1,
-    "ai_confidence": "64%",
+    "ai_confidence": "76%",
     "ai_is_correct": true
   },
   {
@@ -230,12 +230,12 @@
     "ai_is_correct": false
   },
   {
-    "ai2arc_qid": "Mercury_7188073",
-    "question": "Which parts of a plant function as an organ?",
-    "option1": "Spores",
-    "option2": "Leaves",
-    "correct_option": 2,
-    "ai_prediction": 1,
+    "ai2arc_qid": "Mercury_SC_408415",
+    "question": "Cindy learned that trees release gases into to the air during photosynthesis. What gas does a tree release?",
+    "option1": "Oxygen",
+    "option2": "Carbon dioxide",
+    "correct_option": 1,
+    "ai_prediction": 2,
     "ai_confidence": "87%",
     "ai_is_correct": false
   },
@@ -255,9 +255,9 @@
     "option1": "Use a dustpan and broom",
     "option2": "Use a chemical spill kit",
     "correct_option": 1,
-    "ai_prediction": 2,
-    "ai_confidence": "87%",
-    "ai_is_correct": false
+    "ai_prediction": 1,
+    "ai_confidence": "93%",
+    "ai_is_correct": true
   },
   {
     "ai2arc_qid": "MCAS_1998_8_4",
@@ -266,7 +266,7 @@
     "option2": "The amount of water vapor increases as the atmospheric temperature increases.",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "55%",
+    "ai_confidence": "76%",
     "ai_is_correct": true
   },
   {
@@ -276,17 +276,17 @@
     "option2": "is made of multiple cells.",
     "correct_option": 2,
     "ai_prediction": 2,
-    "ai_confidence": "82%",
+    "ai_confidence": "73%",
     "ai_is_correct": true
   },
   {
-    "ai2arc_qid": "MDSA_2007_4_52",
-    "question": "Plants and animals need food for growth. What happens to most of the food that plants produce?",
-    "option1": "Food is used to absorb sunlight.",
-    "option2": "Food is stored for future use.",
-    "correct_option": 2,
-    "ai_prediction": 2,
-    "ai_confidence": "92%",
+    "ai2arc_qid": "Mercury_7166093",
+    "question": "Plants can help prevent erosion or contribute to erosion. Which describes how plants could contribute to erosion?",
+    "option1": "Plant roots grow in rocks, breaking the rocks.",
+    "option2": "Plants slow the runoff of water and soil.",
+    "correct_option": 1,
+    "ai_prediction": 1,
+    "ai_confidence": "86%",
     "ai_is_correct": true
   },
   {
@@ -296,7 +296,7 @@
     "option2": "low pH",
     "correct_option": 1,
     "ai_prediction": 2,
-    "ai_confidence": "61%",
+    "ai_confidence": "80%",
     "ai_is_correct": false
   }
 ]
