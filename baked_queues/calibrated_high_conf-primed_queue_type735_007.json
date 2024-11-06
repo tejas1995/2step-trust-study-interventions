@@ -20,12 +20,12 @@
     "ai_is_correct": true
   },
   {
-    "ai2arc_qid": "NCEOGA_2013_8_40",
-    "question": "How would smoking tobacco most likely have a negative impact on the ability of an individual to succeed at physical activities?",
-    "option1": "It decreases the speed and power of muscle contractions.",
-    "option2": "It decreases stamina and cardiovascular efficiency.",
-    "correct_option": 2,
-    "ai_prediction": 2,
+    "ai2arc_qid": "Mercury_7003955",
+    "question": "What type of charge do individual hair strands have when standing on end due to static electricity?",
+    "option1": "temporary positive charges",
+    "option2": "permanent positive charges",
+    "correct_option": 1,
+    "ai_prediction": 1,
     "ai_confidence": "78%",
     "ai_is_correct": true
   },
@@ -80,12 +80,12 @@
     "ai_is_correct": false
   },
   {
-    "ai2arc_qid": "Mercury_SC_415366",
-    "question": "Trees need oxygen. Roots close to the surface of the ground take in the oxygen the tree needs. Which organisms help trees get oxygen?",
-    "option1": "Woodpeckers making holes in the tree.",
-    "option2": "Earthworms making holes in the ground near the tree.",
-    "correct_option": 2,
-    "ai_prediction": 1,
+    "ai2arc_qid": "Mercury_7131950",
+    "question": "Emily made a chart that included physical changes and chemical changes. Which change should be categorized as a chemical change?",
+    "option1": "Iron becomes rusty",
+    "option2": "Lake water evaporates",
+    "correct_option": 1,
+    "ai_prediction": 2,
     "ai_confidence": "56%",
     "ai_is_correct": false
   },
@@ -120,12 +120,12 @@
     "ai_is_correct": true
   },
   {
-    "ai2arc_qid": "MDSA_2007_4_52",
-    "question": "Plants and animals need food for growth. What happens to most of the food that plants produce?",
-    "option1": "Food is used to absorb sunlight.",
-    "option2": "Food is stored for future use.",
-    "correct_option": 2,
-    "ai_prediction": 2,
+    "ai2arc_qid": "Mercury_7166093",
+    "question": "Plants can help prevent erosion or contribute to erosion. Which describes how plants could contribute to erosion?",
+    "option1": "Plant roots grow in rocks, breaking the rocks.",
+    "option2": "Plants slow the runoff of water and soil.",
+    "correct_option": 1,
+    "ai_prediction": 1,
     "ai_confidence": "75%",
     "ai_is_correct": true
   },
@@ -150,12 +150,12 @@
     "ai_is_correct": true
   },
   {
-    "ai2arc_qid": "Mercury_7003955",
-    "question": "What type of charge do individual hair strands have when standing on end due to static electricity?",
-    "option1": "temporary positive charges",
-    "option2": "permanent positive charges",
-    "correct_option": 1,
-    "ai_prediction": 2,
+    "ai2arc_qid": "NCEOGA_2013_8_40",
+    "question": "How would smoking tobacco most likely have a negative impact on the ability of an individual to succeed at physical activities?",
+    "option1": "It decreases the speed and power of muscle contractions.",
+    "option2": "It decreases stamina and cardiovascular efficiency.",
+    "correct_option": 2,
+    "ai_prediction": 1,
     "ai_confidence": "84%",
     "ai_is_correct": false
   },
