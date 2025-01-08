@@ -17,7 +17,10 @@ let final_user_decision: number = -1
 let initial_user_confidence: number = -1
 let final_user_confidence: number = -1
 let balance = 0
+
 let user_reported_trust_level: number = 5
+let prev_user_reported_trust_level: number = -1
+
 let bet_val_ratio: number = 1
 let time_question_start: number
 let time_final_decision_start: number
@@ -27,10 +30,12 @@ let time_final_confidence_start: number
 let instruction_i: number = 0
 let count_exited_page: number = 0
 
+let intervention_condition_satisfied: boolean = false
+let intervention_applied: boolean = false
+
 let user_current_estimated_trust_level: number = 0
 
 var all_user_interactions = []
-var ai_assistance_intervention_data = {}
 var intervention_details = {}
 var trust_effect_prediction_data = {}
 let findnewconf_result: any
@@ -75,7 +80,8 @@ $("#button_next").on("click", () => {
         let logged_data = {
             "question_i": question_i,
             "user_balance_post_interaction": balance,
-            "user_trust_val": user_reported_trust_level,
+            "user_trust_val_before": prev_user_reported_trust_level,
+            "user_trust_val_after": user_reported_trust_level,
             "initial_user_decision": initial_user_decision,
             "final_user_decision": final_user_decision,
             "initial_user_confidence": initial_user_confidence,
@@ -91,7 +97,7 @@ $("#button_next").on("click", () => {
         }
         logged_data['question'] = question
         logged_data['count_exited_page'] = count_exited_page
-        logged_data['ai_assistance_intervention_data'] = ai_assistance_intervention_data
+        logged_data['intervention_details'] = intervention_details
         logged_data['trust_effect_prediction_data'] = trust_effect_prediction_data
         log_data(logged_data)
         count_exited_page = 0
@@ -280,30 +286,21 @@ async function find_best_aiconf_to_display(user_acceptance_likelihood_neutral_tr
 async function get_ai_assistance() {
     console.log("Getting AI assistance...")
 
-    let displayed_ai_confidence = "AI is figuring out its confidence..."
+    intervention_details = {}
+    let displayed_ai_confidence = question!["ai_confidence"]
     let user_current_trust_level = user_current_estimated_trust_level
     if (useUserReportedTrustVal) {
         user_current_trust_level = (user_reported_trust_level - 5) / 2.5
         console.log("Using user reported trust value: ", user_reported_trust_level)
     }
 
-    if (AIInterventionType == "none") {
+    if (AIInterventionGoal == "none") {
         // No intervention, just show the AI assistance that is already populated in the span
         displayed_ai_confidence = question!["ai_confidence"]
+        intervention_details = {}
+    } 
+    else if (AIInterventionGoal == "mitigate_undertrust") {
 
-    } else if (AIInterventionType == "dummy") {
-        // Dummy intervention, just show the AI's actual confidence but also gets user acceptance likelihood from model
-        let udm_result = await get_user_decision_prob()
-        let user_acceptance_likelihood = udm_result["user_acceptance_likelihood"]
-        console.log("User decision model inputs: ", udm_result["user_decision_model_inputs"])
-        console.log("User's likelihood of going with the AI's prediction: ", user_acceptance_likelihood)
-
-        displayed_ai_confidence = question!["ai_confidence"]
-        intervention_details = {
-            "user_decision_model_inputs": udm_result["user_decision_model_inputs"],
-            "acceptance_likelihood": user_acceptance_likelihood,
-        }
-    } else if (AIInterventionType == "confidence_inflation") {
         if (user_current_trust_level < 0) {
             
             let aldiff_result = await examine_effect_of_trust_on_decision_making()            
@@ -312,126 +309,149 @@ async function get_ai_assistance() {
             console.log("User's likelihood of going with the AI's prediction with neutral trust: ", aldiff_result["neutral_trust"]["acceptance_likelihood"])
             console.log("Acceptance Likelihood Diff: ", al_diff)
             let user_acceptance_likelihood_neutral_trust = aldiff_result["neutral_trust"]["acceptance_likelihood"]
+            intervention_details["acceptance_likelihood_results"] = aldiff_result
 
-            let intervention_applied = false
-            if (al_diff > InterventionALDiffThreshold) {
-                intervention_applied = true
-                //Find nearest AI confidence with minimizing ALDiff
-                
-                findnewconf_result = await find_best_aiconf_to_display(user_acceptance_likelihood_neutral_trust)
-                displayed_ai_confidence = String((findnewconf_result['new_conf_to_display'] * 100).toFixed(0)) + "%"  // Confidence in AI's prediction
-                intervention_details = {
-                    "acceptance_likelihood_results": aldiff_result,
-                    "findnewconf_results": findnewconf_result,
-                    "current_trust_level": user_current_trust_level,
-                    "conf_actual": question!["ai_confidence"],
-                    "conf_new": displayed_ai_confidence,
-                    "acceptance_likelihood-actualconf_actualtrust": aldiff_result["actual_trust"]["acceptance_likelihood"],
-                    "acceptance_likelihood-actualconf_neutraltrust": aldiff_result["neutral_trust"]["acceptance_likelihood"],
-                    "acceptance_likelihood-newconf_actualtrust": findnewconf_result["new_conf_acceptance_likelihood"],
-                    "intervention_applied": true,
-                }
+            intervention_condition_satisfied = false
+            if (al_diff >= InterventionALDiffThreshold) {
+                intervention_condition_satisfied = true
             }
-            else {
-                displayed_ai_confidence = question!["ai_confidence"]
-                intervention_applied = false
-                intervention_details = {
-                    "acceptance_likelihood_results": aldiff_result,
-                    "current_trust_level": user_current_trust_level,
-                    "conf_actual": question!["ai_confidence"],
-                    "acceptance_likelihood-actualconf_actualtrust": aldiff_result["actual_trust"]["acceptance_likelihood"],
-                    "acceptance_likelihood-actualconf_neutraltrust": aldiff_result["neutral_trust"]["acceptance_likelihood"],
-                    "intervention_applied": false,
+            intervention_details["intervention_condition_satisfied"] = intervention_condition_satisfied
+                
+            if (AIInterventionStrategy == "fixed") {
+
+                if (AIInterventionType == "confidence_manip") {
+                    // Increase AI confidence by fixed amount
+                    let ai_confidence = Number(question!["ai_confidence"].replace("%", "")) / 100
+                    let new_confidence = Math.min(1, ai_confidence + InterventionFixedConfChange)
+                    displayed_ai_confidence = String(( new_confidence * 100).toFixed(0)) + "%"
+                    let confidence_inflation = (new_confidence - ai_confidence).toFixed(2)
+
+                    intervention_details["conf_actual"] = question!["ai_confidence"]
+                    intervention_details["conf_new"] = displayed_ai_confidence
+                    intervention_details["conf_inflation"] = confidence_inflation
+
+                    intervention_details["acceptance_likelihood-actualconf_actualtrust"] = aldiff_result["actual_trust"]["acceptance_likelihood"]
+                    intervention_details["acceptance_likelihood-actualconf_neutraltrust"] = aldiff_result["neutral_trust"]["acceptance_likelihood"]
+                    intervention_details["intervention_applied"] = true
+                } 
+                else if (AIInterventionType == "ai_explanation") {
+                    // Add AI explanation
+                    intervention_details["intervention_applied"] = true
+                } 
+                else if (AIInterventionType == "none") {
+                    intervention_details["intervention_applied"] = false
+                }
+
+            } 
+            else if (AIInterventionStrategy == "adaptive") {
+                if (intervention_condition_satisfied) {
+                    if (AIInterventionType == "confidence_manip") {
+                        //Find nearest AI confidence with minimizing ALDiff
+                        findnewconf_result = await find_best_aiconf_to_display(user_acceptance_likelihood_neutral_trust)
+                        displayed_ai_confidence = String((findnewconf_result['new_conf_to_display'] * 100).toFixed(0)) + "%"  // Confidence in AI's prediction
+                        let ai_confidence = Number(question!["ai_confidence"].replace("%", "")) / 100
+                        let confidence_inflation = (findnewconf_result['new_conf_to_display'] - ai_confidence).toFixed(2)
+
+                        intervention_details["findnewconf_results"] = findnewconf_result
+                        intervention_details["conf_actual"] =  question!["ai_confidence"]
+                        intervention_details["conf_new"] =  displayed_ai_confidence
+                        intervention_details["conf_inflation"] = confidence_inflation
+
+                        intervention_details["acceptance_likelihood-actualconf_actualtrust"] =  aldiff_result["actual_trust"]["acceptance_likelihood"]
+                        intervention_details["acceptance_likelihood-actualconf_neutraltrust"] = aldiff_result["neutral_trust"]["acceptance_likelihood"]
+                        intervention_details["acceptance_likelihood-newconf_actualtrust"] = findnewconf_result["new_conf_acceptance_likelihood"]
+                        intervention_details["intervention_applied"] = true
+                    }
+                    else if (AIInterventionType == "ai_explanation") {
+                        // Add AI explanation
+                        intervention_details["intervention_applied"] = true
+                    } 
+                    else if (AIInterventionType == "none") {
+                        intervention_details["intervention_applied"] = false
+                    }
                 }
             }
             
         } else {
             displayed_ai_confidence = question!["ai_confidence"]
-            intervention_details = {"intervention_applied": false}
+            intervention_details["intervention_applied"] = false
         }
 
-    } else if (AIInterventionType == "confidence_inflation_fixed") {
-        // If user's current trust is negative and the user's initial decision is different from the AI's prediction
-        // then inflate the AI's confidence by a fixed amount
+    }
+    else if (AIInterventionGoal == "mitigate_overtrust") {
 
-        if (user_current_trust_level < 0 && initial_user_decision != question!["ai_prediction"]) {
-
-            let aldiff_result = await examine_effect_of_trust_on_decision_making()
-            let al_diff = aldiff_result["al_diff"]
-            console.log("User's likelihood of going with the AI's prediction: ", aldiff_result["actual_trust"]["acceptance_likelihood"])
-            console.log("User's likelihood of going with the AI's prediction with neutral trust: ", aldiff_result["neutral_trust"]["acceptance_likelihood"])
-            console.log("Acceptance Likelihood Diff: ", al_diff)
-
-            let ai_confidence = Number(question!["ai_confidence"].replace("%", "")) / 100
-            let new_confidence = Math.min(1, ai_confidence + InterventionFixedConfIncrease)
-            displayed_ai_confidence = String(( new_confidence * 100).toFixed(0)) + "%"
-            intervention_details = {
-                "acceptance_likelihood_results": aldiff_result,
-                "current_trust_level": user_current_trust_level,
-                "conf_actual": question!["ai_confidence"],
-                "acceptance_likelihood-actualconf_actualtrust": aldiff_result["actual_trust"]["acceptance_likelihood"],
-                "acceptance_likelihood-actualconf_neutraltrust": aldiff_result["neutral_trust"]["acceptance_likelihood"],
-                "intervention_applied": true,
-            }
-            
-        } else {
-                displayed_ai_confidence = question!["ai_confidence"]
-                intervention_details = {"intervention_applied": false}
-        }
-
-    } else if (AIInterventionType == "confidence_deflation") {
         if (user_current_trust_level > 0) {
-            let aldiff_result = await examine_effect_of_trust_on_decision_making()
+            
+            let aldiff_result = await examine_effect_of_trust_on_decision_making()            
             let al_diff = aldiff_result["al_diff"]
             console.log("User's likelihood of going with the AI's prediction: ", aldiff_result["actual_trust"]["acceptance_likelihood"])
             console.log("User's likelihood of going with the AI's prediction with neutral trust: ", aldiff_result["neutral_trust"]["acceptance_likelihood"])
             console.log("Acceptance Likelihood Diff: ", al_diff)
             let user_acceptance_likelihood_neutral_trust = aldiff_result["neutral_trust"]["acceptance_likelihood"]
+            intervention_details["acceptance_likelihood_results"] = aldiff_result
 
-            let intervention_applied = false
-            if (al_diff > InterventionALDiffThreshold) {
-                intervention_applied = true
-                //Find nearest AI confidence with minimizing ALDiff
-                let findnewconf_result = await find_best_aiconf_to_display(user_acceptance_likelihood_neutral_trust)
-                displayed_ai_confidence = String((findnewconf_result['new_conf_to_display'] * 100).toFixed(0)) + "%"  // Confidence in AI's prediction
-                intervention_details = {
-                    "acceptance_likelihood_results": aldiff_result,
-                    "findnewconf_results": findnewconf_result,
-                    "current_trust_level": user_current_trust_level,
-                    "conf_actual": question!["ai_confidence"],
-                    "conf_new": displayed_ai_confidence,
-                    "acceptance_likelihood-actualconf_actualtrust": aldiff_result["actual_trust"]["acceptance_likelihood"],
-                    "acceptance_likelihood-actualconf_neutraltrust": aldiff_result["neutral_trust"]["acceptance_likelihood"],
-                    "acceptance_likelihood-newconf_actualtrust": findnewconf_result["new_conf_acceptance_likelihood"],
-                    "intervention_applied": true,
+            intervention_condition_satisfied = false
+            if (al_diff >= InterventionALDiffThreshold) {
+                intervention_condition_satisfied = true
+            }
+            intervention_details["intervention_condition_satisfied"] = intervention_condition_satisfied
+                
+            if (AIInterventionStrategy == "fixed") {
+
+                if (AIInterventionType == "confidence_manip") {
+                    // Decrease AI confidence by fixed amount
+                    let ai_confidence = Number(question!["ai_confidence"].replace("%", "")) / 100
+                    let new_confidence = Math.max(0.5, Math.min(1, ai_confidence - InterventionFixedConfChange))
+                    displayed_ai_confidence = String(( new_confidence * 100).toFixed(0)) + "%"
+
+                    intervention_details["conf_actual"] = question!["ai_confidence"]
+                    intervention_details["conf_new"] = displayed_ai_confidence
+                    intervention_details["acceptance_likelihood-actualconf_actualtrust"] = aldiff_result["actual_trust"]["acceptance_likelihood"]
+                    intervention_details["acceptance_likelihood-actualconf_neutraltrust"] = aldiff_result["neutral_trust"]["acceptance_likelihood"]
+                    intervention_details["intervention_applied"] = true
+                } 
+                else if (AIInterventionType == "ai_explanation") {
+                    // Add AI explanation
+                    intervention_details["intervention_applied"] = true
+                } 
+                else if (AIInterventionType == "none") {
+                    intervention_details["intervention_applied"] = false
+                }
+            } 
+            else if (AIInterventionStrategy == "adaptive") {
+                if (intervention_condition_satisfied) {
+                    if (AIInterventionType == "confidence_manip") {
+                        //Find nearest AI confidence with minimizing ALDiff
+                        findnewconf_result = await find_best_aiconf_to_display(user_acceptance_likelihood_neutral_trust)
+                        displayed_ai_confidence = String((findnewconf_result['new_conf_to_display'] * 100).toFixed(0)) + "%"  // Confidence in AI's prediction
+
+                        intervention_details["findnewconf_results"] = findnewconf_result
+                        intervention_details["conf_actual"] =  question!["ai_confidence"]
+                        intervention_details["conf_new"] =  displayed_ai_confidence
+                        intervention_details["acceptance_likelihood-actualconf_actualtrust"] =  aldiff_result["actual_trust"]["acceptance_likelihood"]
+                        intervention_details["acceptance_likelihood-actualconf_neutraltrust"] = aldiff_result["neutral_trust"]["acceptance_likelihood"]
+                        intervention_details["acceptance_likelihood-newconf_actualtrust"] = findnewconf_result["new_conf_acceptance_likelihood"]
+                        intervention_details["intervention_applied"] = true
+                    }
+                    else if (AIInterventionType == "ai_explanation") {
+                        // Add AI explanation
+                        intervention_details["intervention_applied"] = true
+                    } 
+                    else if (AIInterventionType == "none") {
+                        intervention_details["intervention_applied"] = false
+                    }
                 }
             }
-            else {
-                displayed_ai_confidence = question!["ai_confidence"]
-                intervention_applied = false
-                intervention_details = {
-                    "acceptance_likelihood_results": aldiff_result,
-                    "current_trust_level": user_current_trust_level,
-                    "conf_actual": question!["ai_confidence"],
-                    "acceptance_likelihood-actualconf_actualtrust": aldiff_result["actual_trust"]["acceptance_likelihood"],
-                    "acceptance_likelihood-actualconf_neutraltrust": aldiff_result["neutral_trust"]["acceptance_likelihood"],
-                    "intervention_applied": false,
-                }
-            }            
+            
         } else {
             displayed_ai_confidence = question!["ai_confidence"]
             intervention_details = {"intervention_applied": false}
         }
+
     }
 
     intervention_details['trust_level_at_start_of_interaction'] = user_current_trust_level
-    ai_assistance_intervention_data = {
-        "intervention_type": AIInterventionType,
-        "actual_ai_confidence": question!["ai_confidence"],
-        "displayed_ai_confidence": displayed_ai_confidence,
-        "intervention_details": intervention_details,
-    }
-    console.log("AI Assistance Intervention Data: ", ai_assistance_intervention_data)
+    console.log("AI Assistance Intervention Details: ", intervention_details)
 
     $("#ai_prediction_span").html("Option " + question!["ai_prediction"])
     $("#ai_confidence_span").html(displayed_ai_confidence)
@@ -628,6 +648,7 @@ function next_question() {
         $("#range_text").text(`Before this interaction, your trust in the AI: ${user_reported_trust_level * 10} / 100.`)
     }
     $("#range_val").val(user_reported_trust_level)
+    prev_user_reported_trust_level = user_reported_trust_level
 
     question_i += 1
     if (question_i >= data.length) {
@@ -684,30 +705,46 @@ if (UIDFromURL != null) {
     globalThis.uid = UID_maybe!
 }
 
-const validAIInterventions = ["none", "dummy", "confidence_inflation", "confidence_inflation_fixed", "confidence_deflation"]
-let AIInterventionType = urlParams.get("intervention_type")
-let InterventionALDiffThreshold = Number(urlParams.get("intervention_threshold"))
-let InterventionFixedConfIncrease = Number(urlParams.get("intervention_fixedconfincrease"))
-let useUserReportedTrustVal = urlParams.get("use_user_reported_trust_level") == "true"
-if (AIInterventionType == null) {
-    AIInterventionType = "none"
-} 
-if (InterventionALDiffThreshold == null) {
-    InterventionALDiffThreshold = -1
-}
-if (InterventionFixedConfIncrease == null) {
-    InterventionFixedConfIncrease = 0
-}
-if (useUserReportedTrustVal == null) {
-    useUserReportedTrustVal = false
+//const validAIInterventions = ["none", "dummy", "confidence_inflation", "confidence_inflation_fixed", "confidence_deflation"]
+//let AIInterventionType = urlParams.get("intervention_type")
+//let InterventionALDiffThreshold = Number(urlParams.get("intervention_threshold"))
+//let InterventionFixedConfIncrease = Number(urlParams.get("intervention_fixedconfincrease"))
+const validInterventionGoals = ["none", "mitigate_undertrust", "mitigate_overtrust"]
+let AIInterventionGoal = urlParams.get("intervention_goal")
+if (AIInterventionGoal == null) {AIInterventionGoal = "none"}
+if (!validInterventionGoals.includes(AIInterventionGoal!)) {
+    throw new Error("Invalid AI Assistance Intervention Goal: " + AIInterventionGoal)
 }
 
-//Assert that the AIAssistanceIntervention is one of the valid values
-if (!validAIInterventions.includes(AIInterventionType!)) {
+const validInterventionTypes = ["none", "dummy", "confidence_manip", "ai_explanation"]
+let AIInterventionType = urlParams.get("intervention_type")
+if (AIInterventionType == null) {AIInterventionType = "none"} 
+if (!validInterventionTypes.includes(AIInterventionType!)) {
     throw new Error("Invalid AI Assistance Intervention: " + AIInterventionType)
 }
+
+const validInterventionStrategies = ["dummy", "fixed", "adaptive"]
+let AIInterventionStrategy = urlParams.get("intervention_strategy")
+if (AIInterventionStrategy == null) {AIInterventionStrategy = "dummy"}
+if (!validInterventionStrategies.includes(AIInterventionStrategy!)) {
+    throw new Error("Invalid AI Assistance Intervention Strategy: " + AIInterventionStrategy)
+}
+
+// Intervention-specific parameters
+let InterventionALDiffThreshold = Number(urlParams.get("intervention_threshold"))
+if (InterventionALDiffThreshold == null) {InterventionALDiffThreshold = -1}
+let InterventionFixedConfChange = Number(urlParams.get("intervention_fixedconfchange"))
+if (InterventionFixedConfChange == null) {InterventionFixedConfChange = 0}
+
+let useUserReportedTrustVal = urlParams.get("use_user_reported_trust_level") == "true"
+if (useUserReportedTrustVal == null) {useUserReportedTrustVal = false}
+
+globalThis.url_data["intervention_goal"] = AIInterventionGoal
 globalThis.url_data["intervention_type"] = AIInterventionType
+globalThis.url_data["intervention_strategy"] = AIInterventionStrategy
 globalThis.url_data["intervention_threshold"] = InterventionALDiffThreshold
+globalThis.url_data["intervention_fixedconfchange"] = InterventionFixedConfChange
+globalThis.url_data["use_user_reported_trust_level"] = useUserReportedTrustVal
 
 // version for paper
 if (globalThis.uid.startsWith("demo_paper")) {
