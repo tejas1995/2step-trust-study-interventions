@@ -48,6 +48,9 @@ function assert(condition, message) {
 
 function next_instructions(increment: number) {
     instruction_i += increment
+    if (skip_trust_reporting && instruction_i == 5) {
+        instruction_i += increment
+    }
 
     if (instruction_i == 0) {
         $("#button_instructions_prev").attr("disabled", "true")
@@ -597,7 +600,12 @@ async function show_result() {
     //$("#button_next").show()
     $("#result_span").show()
     //$("#button_place_bet").hide()
-    $("#how_confident_div").show()
+    if (skip_trust_reporting)   {
+        $("#button_next").show()
+    }
+    else {
+        $("#user_trust_report_div").show()
+    }
 
     trust_effect_prediction_data = await get_trust_effect()
 
@@ -637,7 +645,7 @@ function next_question() {
     $("#final_user_decision_div").hide()
     $("#final_user_confidence_div").hide()
     $('#range_val').removeAttr("disabled")
-    $("#how_confident_div").hide()
+    $("#user_trust_report_div").hide()
     $("#button_place_bet").hide()
     $("#button_next").hide()
     $("#result_span").hide()
@@ -738,6 +746,9 @@ if (InterventionFixedConfChange == null) {InterventionFixedConfChange = 0}
 
 let useUserReportedTrustVal = urlParams.get("use_user_reported_trust_level") == "true"
 if (useUserReportedTrustVal == null) {useUserReportedTrustVal = false}
+
+let skip_trust_reporting = urlParams.get("skip_trust_reporting") == "true"
+if (skip_trust_reporting == null) {skip_trust_reporting = false}
 
 globalThis.url_data["intervention_goal"] = AIInterventionGoal
 globalThis.url_data["intervention_type"] = AIInterventionType
