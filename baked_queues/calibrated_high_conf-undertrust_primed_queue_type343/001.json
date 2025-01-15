@@ -200,12 +200,12 @@
     "ai_is_correct": true
   },
   {
-    "ai2arc_qid": "Mercury_7003955",
-    "question": "What type of charge do individual hair strands have when standing on end due to static electricity?",
-    "option1": "temporary positive charges",
-    "option2": "permanent positive charges",
-    "correct_option": 1,
-    "ai_prediction": 1,
+    "ai2arc_qid": "NCEOGA_2013_8_40",
+    "question": "How would smoking tobacco most likely have a negative impact on the ability of an individual to succeed at physical activities?",
+    "option1": "It decreases the speed and power of muscle contractions.",
+    "option2": "It decreases stamina and cardiovascular efficiency.",
+    "correct_option": 2,
+    "ai_prediction": 2,
     "ai_confidence": "87%",
     "ai_is_correct": true
   },
@@ -260,12 +260,12 @@
     "ai_is_correct": false
   },
   {
-    "ai2arc_qid": "Mercury_SC_408415",
-    "question": "Cindy learned that trees release gases into to the air during photosynthesis. What gas does a tree release?",
-    "option1": "Oxygen",
-    "option2": "Carbon dioxide",
-    "correct_option": 1,
-    "ai_prediction": 2,
+    "ai2arc_qid": "Mercury_7188073",
+    "question": "Which parts of a plant function as an organ?",
+    "option1": "Spores",
+    "option2": "Leaves",
+    "correct_option": 2,
+    "ai_prediction": 1,
     "ai_confidence": "64%",
     "ai_is_correct": false
   },

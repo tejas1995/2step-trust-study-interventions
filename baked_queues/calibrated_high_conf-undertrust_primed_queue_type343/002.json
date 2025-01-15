@@ -50,12 +50,12 @@
     "ai_is_correct": false
   },
   {
-    "ai2arc_qid": "Mercury_SC_408415",
-    "question": "Cindy learned that trees release gases into to the air during photosynthesis. What gas does a tree release?",
-    "option1": "Oxygen",
-    "option2": "Carbon dioxide",
-    "correct_option": 1,
-    "ai_prediction": 2,
+    "ai2arc_qid": "Mercury_7188073",
+    "question": "Which parts of a plant function as an organ?",
+    "option1": "Spores",
+    "option2": "Leaves",
+    "correct_option": 2,
+    "ai_prediction": 1,
     "ai_confidence": "76%",
     "ai_is_correct": false
   },
