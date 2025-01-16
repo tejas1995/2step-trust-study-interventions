@@ -7,7 +7,8 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "82%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "When the temperature in the house is cooler than the temperature selected on the thermostat, the furnace will need to kick in to bring the temperature back up to the desired level. This is a common function of thermostats and furnaces working together to maintain a comfortable temperature inside the house. The furnace turning on is a normal response to the discrepancy in temperatures, allowing the system to regulate and maintain the desired temperature setting."
   },
   {
     "ai2arc_qid": "Mercury_7057733",
@@ -17,7 +18,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "66%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "Clay soils are heavy and have a high water retention capacity, making them ideal for planting a productive garden. These soils hold onto water well, ensuring that plants have a constant water supply even during dry periods. This characteristic is crucial for the healthy growth of garden plants and maximizing their productivity."
   },
   {
     "ai2arc_qid": "Mercury_7131950",
@@ -27,7 +29,8 @@
     "correct_option": 1,
     "ai_prediction": 1,
     "ai_confidence": "73%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "The change where iron becomes rusty should be categorized as a chemical change because it involves a chemical reaction. When iron reacts with oxygen in the presence of water, it forms iron oxide, which is the reddish-brown rust. This transformation at the molecular level indicates a chemical change taking place. On the other hand, the evaporation of lake water is a physical change as it only involves a change in state from liquid to gas without altering the chemical composition of the water."
   },
   {
     "ai2arc_qid": "MCAS_2008_5_5616",
@@ -37,7 +40,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "89%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "The high amount of moisture in the air over Boston can be attributed to its location at a low elevation. This lower elevation allows for the air to hold more moisture, leading to higher levels of humidity in the atmosphere. As a result, Boston experiences consistently high levels of moisture in the air throughout most of the year."
   },
   {
     "ai2arc_qid": "Mercury_7215268",
@@ -47,7 +51,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "67%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "Constructing a large-scale wind farm to generate electricity may have a significant impact on the regional climate. The installation of wind turbines can disrupt natural wind patterns and potentially alter local weather conditions. This can lead to changes in temperature, precipitation, and other environmental factors in the region where the wind farm is located."
   },
   {
     "ai2arc_qid": "MCAS_2014_5_4",
@@ -57,7 +62,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "59%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "The migration of green sea turtles is influenced by external factors such as the need to find suitable nesting sites and avoid overcrowding. These turtles travel long distances to reproduce in areas with optimal conditions, indicating a response to environmental cues rather than an innate behavior. The decision to migrate is likely driven by the availability of resources and the avoidance of competition, rather than an inherent instinct."
   },
   {
     "ai2arc_qid": "MDSA_2007_4_52",
@@ -67,7 +73,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "63%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "Plants need food to absorb sunlight in order to carry out photosynthesis, a process vital for their growth and survival. Without this food, plants would not be able to produce energy from sunlight, hindering their ability to grow. Therefore, the majority of the food that plants produce is essential for absorbing sunlight, rather than being stored for future use."
   },
   {
     "ai2arc_qid": "Mercury_7205153",
@@ -77,7 +84,8 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "63%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "Both a small, solid sample of aluminum and a large, liquid sample of aluminum have a definite volume because the volume of a substance is determined by the amount of space it occupies. In both cases, the aluminum atoms are packed closely together, whether in a solid or liquid state, resulting in a specific volume for each sample. This shared characteristic of having a definite volume is a fundamental property of matter that remains consistent regardless of the state of the substance."
   },
   {
     "ai2arc_qid": "Mercury_7132195",
@@ -87,7 +95,8 @@
     "correct_option": 1,
     "ai_prediction": 1,
     "ai_confidence": "89%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "An inclined plane allows a load to be moved over a longer distance with less force required. By gradually raising the height of the load, the inclined plane reduces the amount of force needed to lift it directly. This simple machine effectively spreads out the work over a longer distance, making it easier to move heavy objects."
   },
   {
     "ai2arc_qid": "Mercury_400397",
@@ -97,7 +106,8 @@
     "correct_option": 1,
     "ai_prediction": 2,
     "ai_confidence": "71%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "Living in its environment, a bear would likely observe and learn from other animals that fish are a readily available food source. Fish are commonly found in rivers and streams, making them easily accessible for a bear to catch and eat. This behavior would be crucial for the bear's survival and would be reinforced through successful hunting experiences."
   },
   {
     "ai2arc_qid": "MCAS_2006_9_5-v1",
@@ -107,7 +117,8 @@
     "correct_option": 1,
     "ai_prediction": 1,
     "ai_confidence": "59%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "When a material like copper is heated, the temperature increase is typically due to the increased motion of its particles. As heat is added, the particles gain kinetic energy and move more rapidly, leading to a rise in temperature. On the other hand, a decrease in the distance between particles would not directly cause a temperature increase, as closer proximity alone does not necessarily result in higher temperatures."
   },
   {
     "ai2arc_qid": "Mercury_SC_416518",
@@ -117,7 +128,8 @@
     "correct_option": 1,
     "ai_prediction": 2,
     "ai_confidence": "62%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "The water in the lake is further away from the melting glacier, allowing it more time to absorb heat from the surrounding environment. Additionally, the waterfall itself generates friction and heat as the water cascades down, contributing to a slight increase in temperature. As a result, the water in the lake is likely to be colder compared to the water directly coming from the melting glacier."
   },
   {
     "ai2arc_qid": "Mercury_SC_400519",
@@ -127,7 +139,8 @@
     "correct_option": 1,
     "ai_prediction": 1,
     "ai_confidence": "81%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "The presence of older rock layered on top of younger rock suggests a geological event like earthquake activity. Earthquakes can cause the folding and shifting of rock layers, leading to the older rock being pushed above the younger rock. This explanation aligns with the observed phenomenon and the principles of geology."
   },
   {
     "ai2arc_qid": "ACTAAP_2012_7_10",
@@ -137,7 +150,8 @@
     "correct_option": 1,
     "ai_prediction": 2,
     "ai_confidence": "67%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "The clear, thick fluid inside the poultry egg that serves as protection for the embryo is the yolk sac. This sac contains essential nutrients and proteins that are necessary for the embryo's development. It plays a crucial role in providing the embryo with the necessary sustenance until it is ready to hatch. The yolk sac also helps to cushion and protect the developing embryo from any potential external harm."
   },
   {
     "ai2arc_qid": "Mercury_7166093",
@@ -147,7 +161,8 @@
     "correct_option": 1,
     "ai_prediction": 2,
     "ai_confidence": "58%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "Plants play a crucial role in reducing erosion by slowing down the flow of water and soil. This allows the soil to absorb more water, preventing it from being washed away. By creating a barrier against runoff, plants help to stabilize the soil and prevent erosion from occurring. This process is essential in maintaining the integrity of the land and protecting against environmental damage."
   },
   {
     "ai2arc_qid": "Mercury_7007910",
@@ -157,7 +172,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "58%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "When a cold air mass interacts with a warm, moist air mass, the warm air is less dense and tends to rise above the cold air. As the warm air rises, it cools and condenses, leading to the formation of clouds and potentially precipitation. This process can push the cold air mass to higher altitudes as the warm air continues to rise, creating a boundary between the two air masses."
   },
   {
     "ai2arc_qid": "ACTAAP_2009_7_11",
@@ -167,7 +183,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "83%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "The temperature of the ocean is a more accurate measure of the effect of solar energy on Earth's atmosphere because the ocean acts as a heat sink, absorbing and storing solar energy over long periods. Changes in ocean temperature have a significant impact on weather patterns, sea levels, and marine life, making it a more comprehensive indicator of the overall impact of solar energy on Earth's climate."
   },
   {
     "ai2arc_qid": "Mercury_SC_401354",
@@ -177,7 +194,8 @@
     "correct_option": 1,
     "ai_prediction": 1,
     "ai_confidence": "80%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "Using a dustpan and broom is the best method for safely retrieving broken glass because it allows for easy and efficient removal of the shards. This method also minimizes the risk of injury from sharp pieces and ensures that all fragments are properly disposed of. Additionally, using a chemical spill kit may not be necessary in this situation as the broken glass does not pose a chemical hazard."
   },
   {
     "ai2arc_qid": "Mercury_7141908",
@@ -187,7 +205,8 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "60%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "The discovery of a new species of a complex organism suggests that it is likely made up of multiple cells, as complex organisms typically have specialized cells that work together to carry out various functions. This complexity indicates a higher level of organization and differentiation than what is typically seen in single-celled organisms like bacteria. The ability to form multiple cells allows for greater specialization and adaptability, which would be advantageous for surviving in the diverse and challenging environment of the ocean floor."
   },
   {
     "ai2arc_qid": "Mercury_7043995",
@@ -197,7 +216,8 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "74%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "The ability of offspring to reproduce is a crucial factor in natural selection as it directly impacts the passing on of genetic traits to future generations. Those individuals who are successful in reproducing and passing on their genes are more likely to contribute to the gene pool of the population, leading to the propagation of advantageous traits. This process ultimately determines which traits are favored and become more prevalent over time, reflecting the concept of \"Survival of the fittest.\""
   },
   {
     "ai2arc_qid": "NCEOGA_2013_8_40",
@@ -207,7 +227,8 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "87%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "Smoking tobacco is known to decrease stamina and cardiovascular efficiency by constricting blood vessels and reducing oxygen delivery to muscles. This can result in decreased endurance and performance during physical activities, as the body struggles to meet the increased oxygen demands. Without proper cardiovascular function, individuals may experience fatigue more quickly and struggle to sustain physical activities for extended periods of time."
   },
   {
     "ai2arc_qid": "Mercury_7142713",
@@ -217,7 +238,8 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "94%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "Chemical energy is stored within the bonds of molecules and can be released during a chemical reaction. This type of energy is a form of potential energy because it has the potential to be converted into other forms of energy, such as heat or kinetic energy. Radiant energy, on the other hand, is a form of kinetic energy that is transmitted in waves or particles."
   },
   {
     "ai2arc_qid": "CSZ_2008_5_CSZ10022",
@@ -227,7 +249,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "63%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "When a hurricane stays over a warm body of water for an extended period of time, it is able to continuously draw in warm, moist air which fuels its strength and intensity. This warm water provides the necessary energy for the hurricane to maintain or even increase its power. On the other hand, moving over a continent would disrupt the flow of warm, moist air into the hurricane, potentially causing it to weaken."
   },
   {
     "ai2arc_qid": "Mercury_SC_415366",
@@ -237,7 +260,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "60%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "Woodpeckers play a crucial role in helping trees get oxygen by making holes in the tree itself. These holes allow for better air circulation within the tree, which in turn helps the roots near the surface receive the necessary oxygen. By creating these holes, woodpeckers indirectly support the tree's ability to access the oxygen it needs to survive and thrive."
   },
   {
     "ai2arc_qid": "Mercury_SC_408700",
@@ -247,7 +271,8 @@
     "correct_option": 1,
     "ai_prediction": 2,
     "ai_confidence": "81%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "When Emily stirred the tea with the spoon, the warmer liquid tea near the surface of the cup transferred heat to the spoon through the movement of the tea. This process allowed the heat to be distributed throughout the spoon, causing it to warm up. This transfer of heat through the movement of the liquid is an example of how heat can be transferred by the process described in the second option."
   },
   {
     "ai2arc_qid": "Mercury_7018515",
@@ -257,7 +282,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "88%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "The reason sound travels faster in saltwater than in freshwater is due to the property of elasticity. In saltwater, the molecules are more tightly packed and have stronger intermolecular forces, allowing sound waves to travel more efficiently through the medium. This increased elasticity results in a greater speed of sound transmission in saltwater compared to freshwater, despite any differences in density."
   },
   {
     "ai2arc_qid": "Mercury_7188073",
@@ -267,7 +293,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "64%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "Spores play a crucial role in reproduction for many plants, serving as a means of dispersing genetic material to create new organisms. They are essential for the survival and propagation of plant species. While leaves are important for photosynthesis and gas exchange, spores have a distinct function as reproductive structures, making them a vital organ in the plant's life cycle."
   },
   {
     "ai2arc_qid": "Mercury_SC_408742",
@@ -277,7 +304,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "81%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "When farmers plant fruit trees in a meadow, the rabbits living in the area will likely benefit from the increased availability of food sources. This abundance of food can lead to improved nutrition for the rabbits, resulting in healthier individuals and potentially higher reproductive rates. With more food available, the rabbits may have more resources to support larger litters of young, leading to an increase in their population."
   },
   {
     "ai2arc_qid": "MCAS_1998_8_4",
@@ -287,7 +315,8 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "65%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "As the atmospheric temperature increases, the air molecules gain energy and move faster, allowing them to hold more water vapor. This is due to the fact that warmer air has a higher capacity for holding water vapor compared to cooler air. Therefore, as the temperature of the atmosphere rises, the total amount of water vapor that the atmosphere can hold also increases."
   },
   {
     "ai2arc_qid": "Mercury_7033810",
@@ -297,6 +326,7 @@
     "correct_option": 1,
     "ai_prediction": 1,
     "ai_confidence": "66%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "Burning fossil fuels releases harmful particles into the air, such as soot and ash, which can contribute to particle pollution. These particles can be inhaled deep into the lungs, causing respiratory issues and exacerbating conditions like asthma. The presence of particle pollution in the air has been linked to a variety of health problems, making it a significant factor in the decline of air quality caused by burning fossil fuels."
   }
 ]

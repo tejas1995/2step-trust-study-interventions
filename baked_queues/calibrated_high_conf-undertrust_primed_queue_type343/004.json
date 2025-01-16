@@ -7,7 +7,8 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "82%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "When a hurricane moves over a continent, it loses its main source of energy which is the warm ocean water. Without the warm water to fuel the storm, the hurricane will gradually weaken as it moves inland. On the other hand, staying over a warm body of water for a long time allows the hurricane to continue to strengthen due to the continuous source of warm, moist air."
   },
   {
     "ai2arc_qid": "Mercury_7057733",
@@ -17,7 +18,8 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "70%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "Soils containing a mixture of sand and clay, like loamy soils, provide the ideal balance for plant growth. While clay soils may retain water well, they can become compacted and hinder root growth. On the other hand, sandy soils drain too quickly, leading to water and nutrient loss. The combination of sand and clay in loamy soils allows for proper drainage and water retention, creating a healthy environment for plants to thrive."
   },
   {
     "ai2arc_qid": "Mercury_7211873",
@@ -27,7 +29,8 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "70%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "Installing solar-collection panels will most likely reduce a school's consumption of nonrenewable resources because they harness energy from the sun, a renewable source, to generate electricity. This means less reliance on fossil fuels like coal or oil, which are finite resources. Additionally, solar panels have a long lifespan and require minimal maintenance, making them a sustainable and cost-effective choice for reducing the school's environmental impact."
   },
   {
     "ai2arc_qid": "MCAS_2006_9_5-v1",
@@ -37,7 +40,8 @@
     "correct_option": 1,
     "ai_prediction": 2,
     "ai_confidence": "79%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "When considering a temperature increase in a copper wire, the key factor to focus on is the distance between copper particles. This distance plays a crucial role in determining how efficiently heat is transferred within the wire. As the distance between copper particles decreases, the likelihood of collisions and interactions between particles increases, leading to a rise in temperature. This phenomenon is a result of the close proximity allowing for more effective transfer of thermal energy."
   },
   {
     "ai2arc_qid": "Mercury_SC_401306",
@@ -47,7 +51,8 @@
     "correct_option": 1,
     "ai_prediction": 2,
     "ai_confidence": "58%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "The narrow tree-growth ring indicates a period of slow growth, which could be due to unfavorable conditions such as drought. However, if the crops grew well that year despite the narrow growth ring, it suggests that the tree was able to access enough resources to support crop growth. This implies that factors other than moisture availability may have influenced the tree's growth, leading to the conclusion that the crops grew well that year."
   },
   {
     "ai2arc_qid": "Mercury_7005478",
@@ -57,7 +62,8 @@
     "correct_option": 1,
     "ai_prediction": 2,
     "ai_confidence": "82%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "In a cold environment, the body needs to conserve heat to maintain its normal temperature. Slowing down the rate of heartbeats helps reduce blood flow to the extremities, which minimizes heat loss to the surroundings. This mechanism allows the body to focus on keeping vital organs warm and maintaining overall body temperature."
   },
   {
     "ai2arc_qid": "Mercury_SC_416518",
@@ -67,7 +73,8 @@
     "correct_option": 1,
     "ai_prediction": 2,
     "ai_confidence": "70%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "The water in the lake is further away from the melting glacier, allowing it more time to absorb heat from the surrounding environment. Additionally, the waterfall itself generates friction and heat as the water cascades down, contributing to a slight increase in temperature. As a result, the water in the lake is likely to be colder compared to the water directly coming from the melting glacier."
   },
   {
     "ai2arc_qid": "Mercury_SC_408742",
@@ -77,7 +84,8 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "82%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "When farmers plant fruit trees in a meadow, the rabbits living in the area may face a decrease in population size. This is because the trees may disrupt the rabbits' habitat, leading to a decrease in available food sources and shelter. With less resources to support their population, the rabbits may struggle to survive and reproduce at previous rates."
   },
   {
     "ai2arc_qid": "Mercury_7132195",
@@ -87,7 +95,8 @@
     "correct_option": 1,
     "ai_prediction": 1,
     "ai_confidence": "80%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "An inclined plane allows a load to be moved over a longer distance with less force required. By gradually raising the height of the load, the inclined plane reduces the amount of force needed to lift it directly. This simple machine effectively spreads out the work over a longer distance, making it easier to move heavy objects."
   },
   {
     "ai2arc_qid": "Mercury_7205153",
@@ -97,7 +106,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "57%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "Both small, solid samples of aluminum and large, liquid samples of aluminum are made up of the same type of atoms. This means that the number of atoms in each sample remains constant regardless of whether the aluminum is in solid or liquid form. This similarity in the composition of the samples highlights the consistency in the number of atoms present in both states of aluminum."
   },
   {
     "ai2arc_qid": "Mercury_7185448",
@@ -107,7 +117,8 @@
     "correct_option": 1,
     "ai_prediction": 1,
     "ai_confidence": "53%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "When lighting a match and baking a cake, new substances are indeed created through chemical reactions. In the case of lighting a match, the match head reacts with oxygen in the air to produce heat, light, and new compounds like carbon dioxide. Similarly, when baking a cake, ingredients like flour, sugar, and eggs undergo chemical changes through processes like fermentation and caramelization to form a completely different product. These transformations demonstrate the fundamental characteristic of chemical changes - the creation of new substances."
   },
   {
     "ai2arc_qid": "NYSEDREGENTS_2009_8_4",
@@ -117,7 +128,8 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "80%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "The weather event that typically involves heavy precipitation, strong winds, and subzero temperatures is characterized by freezing conditions and snowfall. This phenomenon is often associated with low visibility due to blowing snow and can create dangerous travel conditions. Additionally, this type of weather event is more commonly experienced in colder regions where temperatures regularly drop below freezing."
   },
   {
     "ai2arc_qid": "Mercury_SC_415366",
@@ -127,7 +139,8 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "92%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "The presence of holes in the ground near the tree allows for better aeration of the soil, which in turn helps the roots to access the oxygen they need. Earthworms are known for creating tunnels and burrows in the soil, which can improve soil structure and oxygen levels. This activity benefits the tree by ensuring that oxygen is readily available for the roots near the surface."
   },
   {
     "ai2arc_qid": "Mercury_SC_408700",
@@ -137,7 +150,8 @@
     "correct_option": 1,
     "ai_prediction": 2,
     "ai_confidence": "73%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "When Emily stirred the tea with the spoon, the warmer liquid tea near the surface of the cup transferred heat to the spoon through the movement of the tea. This process allowed the heat to be distributed throughout the spoon, causing it to warm up. This transfer of heat through the movement of the liquid is an example of how heat can be transferred by the process described in the second option."
   },
   {
     "ai2arc_qid": "NCEOGA_2013_8_40",
@@ -147,7 +161,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "70%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "Smoking tobacco can have a negative impact on an individual's physical abilities by affecting the speed and power of muscle contractions. This is because tobacco smoke contains harmful chemicals that can damage muscle tissue and impair muscle function. As a result, individuals who smoke may experience reduced strength and endurance during physical activities, ultimately hindering their performance and success."
   },
   {
     "ai2arc_qid": "Mercury_7188073",
@@ -157,7 +172,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "80%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "Spores play a crucial role in reproduction for many plants, serving as a means of dispersing genetic material to create new organisms. They are essential for the survival and propagation of plant species. While leaves are important for photosynthesis and gas exchange, spores have a distinct function as reproductive structures, making them a vital organ in the plant's life cycle."
   },
   {
     "ai2arc_qid": "NCEOGA_2013_8_55",
@@ -167,7 +183,8 @@
     "correct_option": 1,
     "ai_prediction": 2,
     "ai_confidence": "68%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "The decrease in the number of organisms from one trophic level to the next can be attributed to the fact that consumers at higher levels feed on smaller organisms that have less energy. As energy is transferred up the food chain, there is a loss of energy at each trophic level due to inefficiencies in energy transfer and metabolism. This results in fewer organisms being able to be sustained at higher trophic levels."
   },
   {
     "ai2arc_qid": "Mercury_400397",
@@ -177,7 +194,8 @@
     "correct_option": 1,
     "ai_prediction": 2,
     "ai_confidence": "66%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "Living in its environment, a bear would likely observe and learn from other animals that fish are a readily available food source. Fish are commonly found in rivers and streams, making them easily accessible for a bear to catch and eat. This behavior would be crucial for the bear's survival and would be reinforced through successful hunting experiences."
   },
   {
     "ai2arc_qid": "MCAS_1998_8_4",
@@ -187,7 +205,8 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "85%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "As the atmospheric temperature increases, the air molecules gain energy and move faster, allowing them to hold more water vapor. This is due to the fact that warmer air has a higher capacity for holding water vapor compared to cooler air. Therefore, as the temperature of the atmosphere rises, the total amount of water vapor that the atmosphere can hold also increases."
   },
   {
     "ai2arc_qid": "Mercury_SC_401354",
@@ -197,7 +216,8 @@
     "correct_option": 1,
     "ai_prediction": 1,
     "ai_confidence": "65%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "Using a dustpan and broom is the best method for safely retrieving broken glass because it allows for easy and efficient removal of the shards. This method also minimizes the risk of injury from sharp pieces and ensures that all fragments are properly disposed of. Additionally, using a chemical spill kit may not be necessary in this situation as the broken glass does not pose a chemical hazard."
   },
   {
     "ai2arc_qid": "Mercury_7142713",
@@ -207,7 +227,8 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "91%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "Chemical energy is stored within the bonds of molecules and can be released during a chemical reaction. This type of energy is a form of potential energy because it has the potential to be converted into other forms of energy, such as heat or kinetic energy. Radiant energy, on the other hand, is a form of kinetic energy that is transmitted in waves or particles."
   },
   {
     "ai2arc_qid": "Mercury_7007910",
@@ -217,7 +238,8 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "55%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "When a cold air mass meets a warm, moist air mass, the warm air rises rapidly due to its lower density. As it rises, it cools and condenses, forming clouds and eventually precipitation. This process can result in rain or snow depending on the temperature of the air masses and the altitude at which they meet. Therefore, the most likely outcome when these two air masses collide is the occurrence of precipitation."
   },
   {
     "ai2arc_qid": "MEAP_2005_5_38",
@@ -227,7 +249,8 @@
     "correct_option": 1,
     "ai_prediction": 2,
     "ai_confidence": "91%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "As an airplane climbs in altitude, the friction with the atmosphere increases due to the higher speed and thinner air. This friction generates heat, which can prevent ice from forming on the windshield. In contrast, the temperature at higher altitudes is generally colder, which would not contribute to the formation of ice. Therefore, it is more likely that ice would form due to friction with the atmosphere rather than colder air at higher altitudes."
   },
   {
     "ai2arc_qid": "Mercury_7215268",
@@ -237,7 +260,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "74%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "Constructing a large-scale wind farm to generate electricity may have a significant impact on the regional climate. The installation of wind turbines can disrupt natural wind patterns and potentially alter local weather conditions. This can lead to changes in temperature, precipitation, and other environmental factors in the region where the wind farm is located."
   },
   {
     "ai2arc_qid": "Mercury_7234465",
@@ -247,7 +271,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "97%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "During fossil-fuel formation, high temperatures lead to the decomposition of organic matter, resulting in the production of heavier hydrocarbons such as crude oil. This process occurs at depths where the required temperature and pressure conditions are conducive to the formation of crude oil. As a result, the presence of high temperatures favors the production of this specific product over the lighter hydrocarbons found in natural gas."
   },
   {
     "ai2arc_qid": "Mercury_7166093",
@@ -257,7 +282,8 @@
     "correct_option": 1,
     "ai_prediction": 2,
     "ai_confidence": "64%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "Plants play a crucial role in reducing erosion by slowing down the flow of water and soil. This allows the soil to absorb more water, preventing it from being washed away. By creating a barrier against runoff, plants help to stabilize the soil and prevent erosion from occurring. This process is essential in maintaining the integrity of the land and protecting against environmental damage."
   },
   {
     "ai2arc_qid": "VASoL_2008_5_28",
@@ -267,7 +293,8 @@
     "correct_option": 2,
     "ai_prediction": 1,
     "ai_confidence": "94%",
-    "ai_is_correct": false
+    "ai_is_correct": false,
+    "ai_explanation": "As submarines descend into the ocean, scientists observe a significant increase in the temperature of the surrounding water. This change in temperature is a key indicator of the unique thermal properties of the deep ocean layers. The rising temperatures can be attributed to various factors such as geothermal activity, the absence of sunlight, and the density of the water at different depths. These temperature fluctuations play a crucial role in shaping the diverse ecosystems that exist in the deep ocean."
   },
   {
     "ai2arc_qid": "Mercury_7033810",
@@ -277,7 +304,8 @@
     "correct_option": 1,
     "ai_prediction": 1,
     "ai_confidence": "72%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "Burning fossil fuels releases harmful particles into the air, such as soot and ash, which can contribute to particle pollution. These particles can be inhaled deep into the lungs, causing respiratory issues and exacerbating conditions like asthma. The presence of particle pollution in the air has been linked to a variety of health problems, making it a significant factor in the decline of air quality caused by burning fossil fuels."
   },
   {
     "ai2arc_qid": "Mercury_7205555",
@@ -287,7 +315,8 @@
     "correct_option": 1,
     "ai_prediction": 1,
     "ai_confidence": "78%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "Water's strong polarity allows it to interact with the charged ions in crystalline salts, breaking them apart and dissolving them. This is because water molecules are polar, with oxygen being more electronegative than hydrogen, creating a partial negative charge near the oxygen and partial positive charges near the hydrogen atoms. This polarity allows water molecules to surround and solvate the ions in the salt, leading to the dissolution of the salt in water."
   },
   {
     "ai2arc_qid": "Mercury_7141908",
@@ -297,6 +326,7 @@
     "correct_option": 2,
     "ai_prediction": 2,
     "ai_confidence": "71%",
-    "ai_is_correct": true
+    "ai_is_correct": true,
+    "ai_explanation": "The discovery of a new species of a complex organism suggests that it is likely made up of multiple cells, as complex organisms typically have specialized cells that work together to carry out various functions. This complexity indicates a higher level of organization and differentiation than what is typically seen in single-celled organisms like bacteria. The ability to form multiple cells allows for greater specialization and adaptability, which would be advantageous for surviving in the diverse and challenging environment of the ocean floor."
   }
 ]
