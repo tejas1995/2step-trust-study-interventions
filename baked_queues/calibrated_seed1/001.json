@@ -6,8 +6,9 @@
         "option2": "water pressure",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "53%",
-        "ai_is_correct": true
+        "ai_confidence": "61%",
+        "ai_is_correct": true,
+        "ai_explanation": "As submarines descend into the ocean, the weight of the water above them increases, causing a rise in pressure. This increase in pressure can be felt by the scientists inside the submarine and can have significant effects on the structural integrity of the vessel. Therefore, it is crucial for scientists to monitor and account for this change in pressure as they explore deeper parts of the ocean."
     },
     {
         "ai2arc_qid": "Mercury_7185448",
@@ -16,8 +17,9 @@
         "option2": "They create new substances.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "89%",
-        "ai_is_correct": true
+        "ai_confidence": "82%",
+        "ai_is_correct": true,
+        "ai_explanation": "When lighting a match and baking a cake, new substances are indeed created through chemical reactions. In the case of lighting a match, the match head reacts with oxygen in the air to produce heat, light, and new compounds like carbon dioxide. Similarly, when baking a cake, ingredients like flour, sugar, and eggs undergo chemical changes through processes like fermentation and caramelization to form a completely different product. These transformations demonstrate the fundamental characteristic of chemical changes - the creation of new substances."
     },
     {
         "ai2arc_qid": "Mercury_7234465",
@@ -26,8 +28,9 @@
         "option2": "Natural gas",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "64%",
-        "ai_is_correct": false
+        "ai_confidence": "68%",
+        "ai_is_correct": false,
+        "ai_explanation": "During fossil-fuel formation, high temperatures lead to the decomposition of organic matter, resulting in the production of heavier hydrocarbons such as crude oil. This process occurs at depths where the required temperature and pressure conditions are conducive to the formation of crude oil. As a result, the presence of high temperatures favors the production of this specific product over the lighter hydrocarbons found in natural gas."
     },
     {
         "ai2arc_qid": "MCAS_2006_9_5-v1",
@@ -36,8 +39,9 @@
         "option2": "an increase in the motion of the copper particles",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "69%",
-        "ai_is_correct": true
+        "ai_confidence": "70%",
+        "ai_is_correct": true,
+        "ai_explanation": "When a material like copper is heated, the temperature increase is typically due to the increased motion of its particles. As heat is added, the particles gain kinetic energy and move more rapidly, leading to a rise in temperature. On the other hand, a decrease in the distance between particles would not directly cause a temperature increase, as closer proximity alone does not necessarily result in higher temperatures."
     },
     {
         "ai2arc_qid": "Mercury_SC_416518",
@@ -46,8 +50,9 @@
         "option2": "Glacier",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "75%",
-        "ai_is_correct": false
+        "ai_confidence": "74%",
+        "ai_is_correct": false,
+        "ai_explanation": "The water in the lake is further away from the melting glacier, allowing it more time to absorb heat from the surrounding environment. Additionally, the waterfall itself generates friction and heat as the water cascades down, contributing to a slight increase in temperature. As a result, the water in the lake is likely to be colder compared to the water directly coming from the melting glacier."
     },
     {
         "ai2arc_qid": "Mercury_7211873",
@@ -56,8 +61,9 @@
         "option2": "Solar-collection panels",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "93%",
-        "ai_is_correct": true
+        "ai_confidence": "84%",
+        "ai_is_correct": true,
+        "ai_explanation": "Installing solar-collection panels will most likely reduce a school's consumption of nonrenewable resources because they harness energy from the sun, a renewable source, to generate electricity. This means less reliance on fossil fuels like coal or oil, which are finite resources. Additionally, solar panels have a long lifespan and require minimal maintenance, making them a sustainable and cost-effective choice for reducing the school's environmental impact."
     },
     {
         "ai2arc_qid": "Mercury_7205555",
@@ -65,9 +71,10 @@
         "option1": "low pH",
         "option2": "strong polarity",
         "correct_option": 2,
-        "ai_prediction": 2,
-        "ai_confidence": "87%",
-        "ai_is_correct": true
+        "ai_prediction": 1,
+        "ai_confidence": "81%",
+        "ai_is_correct": false,
+        "ai_explanation": "Water's ability to dissolve crystalline salts is due to its unique chemical properties. One of these properties is related to its pH level, which plays a crucial role in breaking down the ionic bonds present in salts. This characteristic allows water to effectively separate the positive and negative ions in the salt, making it a suitable solvent for crystalline salts."
     },
     {
         "ai2arc_qid": "Mercury_SC_408415",
@@ -76,8 +83,9 @@
         "option2": "Oxygen",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "67%",
-        "ai_is_correct": true
+        "ai_confidence": "69%",
+        "ai_is_correct": true,
+        "ai_explanation": "During photosynthesis, trees absorb carbon dioxide and water to produce glucose and oxygen. The oxygen produced is released into the air as a byproduct of this process. This oxygen is essential for the survival of many living organisms, including humans, as it is used in respiration to produce energy. Therefore, the gas released by trees during photosynthesis is crucial for sustaining life on Earth."
     },
     {
         "ai2arc_qid": "Mercury_7132195",
@@ -86,8 +94,9 @@
         "option2": "Inclined plane",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "76%",
-        "ai_is_correct": false
+        "ai_confidence": "74%",
+        "ai_is_correct": false,
+        "ai_explanation": "The simple machine that increases the distance over which a load travels and reduces the needed force is designed to redirect the force applied. By utilizing this specific type of machine, the load can be lifted with less effort over a longer distance, making it more efficient and effective. This machine allows for the load to be moved in a way that minimizes the force required while maximizing the distance covered."
     },
     {
         "ai2arc_qid": "NCEOGA_2013_8_55",
@@ -97,7 +106,8 @@
         "correct_option": 1,
         "ai_prediction": 2,
         "ai_confidence": "72%",
-        "ai_is_correct": false
+        "ai_is_correct": false,
+        "ai_explanation": "The decrease in the number of organisms from one trophic level to the next can be attributed to the fact that consumers at higher levels feed on smaller organisms that have less energy. As energy is transferred up the food chain, there is a loss of energy at each trophic level due to inefficiencies in energy transfer and metabolism. This results in fewer organisms being able to be sustained at higher trophic levels."
     },
     {
         "ai2arc_qid": "Mercury_7205153",
@@ -106,8 +116,9 @@
         "option2": "The same number of atoms.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "63%",
-        "ai_is_correct": true
+        "ai_confidence": "67%",
+        "ai_is_correct": true,
+        "ai_explanation": "Both a small, solid sample of aluminum and a large, liquid sample of aluminum have a definite volume because the volume of a substance is determined by the amount of space it occupies. In both cases, the aluminum atoms are packed closely together, whether in a solid or liquid state, resulting in a specific volume for each sample. This shared characteristic of having a definite volume is a fundamental property of matter that remains consistent regardless of the state of the substance."
     },
     {
         "ai2arc_qid": "Mercury_7007910",
@@ -116,8 +127,9 @@
         "option2": "Cold air is pushed to high altitudes.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "78%",
-        "ai_is_correct": true
+        "ai_confidence": "75%",
+        "ai_is_correct": true,
+        "ai_explanation": "When a cold air mass meets a warm, moist air mass, the warm air rises rapidly due to its lower density. As it rises, it cools and condenses, forming clouds and eventually precipitation. This process can result in rain or snow depending on the temperature of the air masses and the altitude at which they meet. Therefore, the most likely outcome when these two air masses collide is the occurrence of precipitation."
     },
     {
         "ai2arc_qid": "MCAS_1998_8_4",
@@ -126,8 +138,9 @@
         "option2": "The amount of water vapor decreases as the atmospheric temperature increases.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "51%",
-        "ai_is_correct": true
+        "ai_confidence": "60%",
+        "ai_is_correct": true,
+        "ai_explanation": "As the atmospheric temperature increases, the air molecules gain energy and move faster, allowing them to hold more water vapor. This is due to the fact that warmer air has a higher capacity for holding water vapor compared to cooler air. Therefore, as the temperature of the atmosphere rises, the total amount of water vapor that the atmosphere can hold also increases."
     },
     {
         "ai2arc_qid": "Mercury_SC_408700",
@@ -136,8 +149,9 @@
         "option2": "conduction",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "87%",
-        "ai_is_correct": true
+        "ai_confidence": "80%",
+        "ai_is_correct": true,
+        "ai_explanation": "When Emily stirred the tea with a spoon, the heat from the tea was transferred to the spoon through direct contact. This process is known as the transfer of heat through conduction, where heat energy is passed from one particle to another within a material. As the spoon absorbed the heat from the tea, its temperature increased, causing it to feel warm to the touch."
     },
     {
         "ai2arc_qid": "MCAS_2014_5_4",
@@ -146,8 +160,9 @@
         "option2": "An instinctive behavior.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "65%",
-        "ai_is_correct": true
+        "ai_confidence": "68%",
+        "ai_is_correct": true,
+        "ai_explanation": "The green sea turtles' annual migration of approximately 2000 km to reproduce is a remarkable example of a behavior that is ingrained in their genetic makeup. This instinctive behavior has been passed down through generations as a survival strategy, allowing them to return to the same beaches where they were born to lay their eggs. This long journey showcases the turtles' remarkable ability to navigate vast distances with precision and purpose."
     },
     {
         "ai2arc_qid": "NYSEDREGENTS_2009_8_4",
@@ -156,8 +171,9 @@
         "option2": "Hurricane",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "88%",
-        "ai_is_correct": false
+        "ai_confidence": "81%",
+        "ai_is_correct": false,
+        "ai_explanation": "The weather event described typically involves strong winds and heavy precipitation, which are characteristics of hurricanes. Additionally, the mention of surface air temperatures below 0°C is not consistent with blizzards, as blizzards are associated with snow and cold temperatures, but not specifically temperatures below freezing. Therefore, based on the description provided, the weather event is more likely to be associated with hurricanes rather than blizzards."
     },
     {
         "ai2arc_qid": "Mercury_7018515",
@@ -165,9 +181,10 @@
         "option1": "has a higher density.",
         "option2": "is more elastic.",
         "correct_option": 1,
-        "ai_prediction": 1,
-        "ai_confidence": "91%",
-        "ai_is_correct": true
+        "ai_prediction": 2,
+        "ai_confidence": "83%",
+        "ai_is_correct": false,
+        "ai_explanation": "The reason sound travels faster in saltwater than in freshwater is due to the property of elasticity. In saltwater, the molecules are more tightly packed and have stronger intermolecular forces, allowing sound waves to travel more efficiently through the medium. This increased elasticity results in a greater speed of sound transmission in saltwater compared to freshwater, despite any differences in density."
     },
     {
         "ai2arc_qid": "MDSA_2007_4_52",
@@ -176,8 +193,9 @@
         "option2": "Food is stored for future use.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "85%",
-        "ai_is_correct": true
+        "ai_confidence": "79%",
+        "ai_is_correct": true,
+        "ai_explanation": "Plants produce food through photosynthesis, converting sunlight into energy. This food is essential for their growth and development. Since plants cannot consume their food immediately, they store it in various parts of their structure for future use, such as in roots, stems, and leaves. This stored food allows plants to survive during periods of limited sunlight or nutrients, ensuring their continued growth and reproduction."
     },
     {
         "ai2arc_qid": "Mercury_7084648",
@@ -186,8 +204,9 @@
         "option2": "Lack of moisture in the air.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "83%",
-        "ai_is_correct": true
+        "ai_confidence": "78%",
+        "ai_is_correct": true,
+        "ai_explanation": "The low amount of rainfall in Nevada is likely due to the lack of moisture in the air. Without sufficient moisture, there is limited potential for rainfall to occur. This lack of moisture can be attributed to the dry climate and arid conditions present in the region."
     },
     {
         "ai2arc_qid": "MCAS_2008_5_5616",
@@ -196,8 +215,9 @@
         "option2": "Boston is at a low elevation.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "57%",
-        "ai_is_correct": true
+        "ai_confidence": "64%",
+        "ai_is_correct": true,
+        "ai_explanation": "The proximity of Boston to an ocean plays a crucial role in the high moisture content in the air. Oceans are vast bodies of water that evaporate easily, releasing water vapor into the atmosphere. This water vapor then travels with the wind and contributes to the overall humidity levels in the air over Boston."
     },
     {
         "ai2arc_qid": "MDSA_2009_8_14",
@@ -206,8 +226,9 @@
         "option2": "An electric motor",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "84%",
-        "ai_is_correct": true
+        "ai_confidence": "79%",
+        "ai_is_correct": true,
+        "ai_explanation": "The device that is designed to transform electrical energy into useful heat energy is commonly used for cooking and is found in many kitchens. This device typically consists of heating elements that generate heat when electricity is supplied to them. The heat produced by this device is essential for cooking food and is a key feature of its functionality."
     },
     {
         "ai2arc_qid": "MCAS_1998_8_4",
@@ -216,8 +237,9 @@
         "option2": "The amount of water vapor decreases as the atmospheric temperature increases.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "67%",
-        "ai_is_correct": true
+        "ai_confidence": "69%",
+        "ai_is_correct": true,
+        "ai_explanation": "As the atmospheric temperature increases, the air molecules gain energy and move faster, allowing them to hold more water vapor. This is due to the fact that warmer air has a higher capacity for holding water vapor compared to cooler air. Therefore, as the temperature of the atmosphere rises, the total amount of water vapor that the atmosphere can hold also increases."
     },
     {
         "ai2arc_qid": "Mercury_7131950",
@@ -226,8 +248,9 @@
         "option2": "Lake water evaporates",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "61%",
-        "ai_is_correct": false
+        "ai_confidence": "66%",
+        "ai_is_correct": false,
+        "ai_explanation": "The change involving the evaporation of lake water is categorized as a chemical change because it involves the conversion of liquid water into water vapor, which is a different chemical composition. This process requires breaking the intermolecular bonds between water molecules, resulting in a chemical transformation. This is in contrast to the rusting of iron, which is a physical change involving the formation of a different physical state without a change in chemical composition."
     },
     {
         "ai2arc_qid": "Mercury_7215268",
@@ -236,8 +259,9 @@
         "option2": "Wind farms can disrupt migrating wildlife.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "56%",
-        "ai_is_correct": true
+        "ai_confidence": "63%",
+        "ai_is_correct": true,
+        "ai_explanation": "Constructing a large-scale wind farm can disrupt migrating wildlife by altering their natural habitats and migration routes. The installation of wind turbines can create barriers that impede the movement of birds and other animals, leading to potential collisions with the structures. This disruption can have negative impacts on the local ecosystem and biodiversity, highlighting the environmental consequences of wind farm construction."
     },
     {
         "ai2arc_qid": "NCEOGA_2013_8_40",
@@ -246,8 +270,9 @@
         "option2": "It decreases the speed and power of muscle contractions.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "64%",
-        "ai_is_correct": true
+        "ai_confidence": "68%",
+        "ai_is_correct": true,
+        "ai_explanation": "Smoking tobacco is known to decrease stamina and cardiovascular efficiency by constricting blood vessels and reducing oxygen delivery to muscles. This can result in decreased endurance and performance during physical activities, as the body struggles to meet the increased oxygen demands. Without proper cardiovascular function, individuals may experience fatigue more quickly and struggle to sustain physical activities for extended periods of time."
     },
     {
         "ai2arc_qid": "CSZ_2008_5_CSZ10022",
@@ -256,8 +281,9 @@
         "option2": "Moving over a continent.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "89%",
-        "ai_is_correct": true
+        "ai_confidence": "82%",
+        "ai_is_correct": true,
+        "ai_explanation": "When a hurricane moves over a continent, it loses its main source of energy which is the warm ocean water. Without the warm water to fuel the storm, the hurricane will gradually weaken as it moves inland. On the other hand, staying over a warm body of water for a long time allows the hurricane to continue to strengthen due to the continuous source of warm, moist air."
     },
     {
         "ai2arc_qid": "ACTAAP_2009_7_11",
@@ -266,8 +292,9 @@
         "option2": "The temperature of the ocean",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "65%",
-        "ai_is_correct": true
+        "ai_confidence": "69%",
+        "ai_is_correct": true,
+        "ai_explanation": "The temperature of the air is a more direct measure of the impact of solar energy on Earth's atmosphere as it reflects the immediate heating effect on the gases surrounding the planet. Changes in air temperature can indicate fluctuations in energy absorption and retention in the atmosphere, providing valuable insights into the overall climate dynamics influenced by solar radiation. In contrast, the temperature of the ocean, while important for understanding global warming, may not capture the immediate effects of solar energy on the atmosphere."
     },
     {
         "ai2arc_qid": "MEAP_2005_5_38",
@@ -275,9 +302,10 @@
         "option1": "friction with the atmosphere causes ice to develop.",
         "option2": "moisture on the outside of the plane freezes due to colder air at higher altitudes.",
         "correct_option": 2,
-        "ai_prediction": 1,
-        "ai_confidence": "53%",
-        "ai_is_correct": false
+        "ai_prediction": 2,
+        "ai_confidence": "62%",
+        "ai_is_correct": true,
+        "ai_explanation": "As an airplane ascends to higher altitudes, the outside air temperature decreases significantly. This drop in temperature causes any moisture present on the plane's surface to freeze, leading to the formation of ice crystals. This phenomenon is a result of the colder air at higher altitudes, rather than any friction with the atmosphere."
     },
     {
         "ai2arc_qid": "Mercury_SC_408742",
@@ -286,8 +314,9 @@
         "option2": "The number of their young will increase.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "93%",
-        "ai_is_correct": true
+        "ai_confidence": "84%",
+        "ai_is_correct": true,
+        "ai_explanation": "When farmers plant fruit trees in a meadow, the rabbits living in the area may face a decrease in population size. This is because the trees may disrupt the rabbits' habitat, leading to a decrease in available food sources and shelter. With less resources to support their population, the rabbits may struggle to survive and reproduce at previous rates."
     },
     {
         "ai2arc_qid": "MDSA_2007_8_47",
@@ -296,7 +325,8 @@
         "option2": "an aluminum core",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "75%",
-        "ai_is_correct": false
+        "ai_confidence": "74%",
+        "ai_is_correct": false,
+        "ai_explanation": "Using an aluminum core would likely increase the strength of the electromagnet because aluminum is a good conductor of electricity. This means that the flow of current through the electromagnet would be more efficient, resulting in a stronger magnetic field being generated. Additionally, aluminum is lightweight and can help reduce the overall weight of the electromagnet, potentially making it easier to handle and install."
     }
 ]

@@ -5,10 +5,10 @@
         "option1": "The amount of water vapor decreases as the atmospheric temperature increases.",
         "option2": "The amount of water vapor increases as the atmospheric temperature increases.",
         "correct_option": 2,
-        "ai_prediction": 2,
-        "ai_confidence": "82%",
-        "ai_is_correct": true,
-        "ai_explanation": "As the atmospheric temperature increases, the air molecules gain energy and move faster, allowing them to hold more water vapor. This is due to the fact that warmer air has a higher capacity for holding water vapor compared to cooler air. Therefore, as the temperature of the atmosphere rises, the total amount of water vapor that the atmosphere can hold also increases."
+        "ai_prediction": 1,
+        "ai_confidence": "78%",
+        "ai_is_correct": false,
+        "ai_explanation": "As the atmospheric temperature increases, the air molecules move more rapidly and spread out, creating more space between them. This increased space means that there is less room for water vapor molecules to exist in the atmosphere, leading to a decrease in the total amount of water vapor that the atmosphere can hold. This relationship between temperature and the capacity of the atmosphere to hold water vapor is a fundamental principle in meteorology and atmospheric science."
     },
     {
         "ai2arc_qid": "Mercury_7166093",
@@ -17,7 +17,7 @@
         "option2": "Plants slow the runoff of water and soil.",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "78%",
+        "ai_confidence": "75%",
         "ai_is_correct": false,
         "ai_explanation": "Plants play a crucial role in reducing erosion by slowing down the flow of water and soil. This allows the soil to absorb more water, preventing it from being washed away. By creating a barrier against runoff, plants help to stabilize the soil and prevent erosion from occurring. This process is essential in maintaining the integrity of the land and protecting against environmental damage."
     },
@@ -28,7 +28,7 @@
         "option2": "a larger power source",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "61%",
+        "ai_confidence": "66%",
         "ai_is_correct": true,
         "ai_explanation": "Increasing the power source would most likely increase the strength of the electromagnet because a higher voltage would result in a stronger magnetic field. This would allow the electromagnet to attract the metal arm of the doorbell more forcefully, creating a louder and more noticeable sound. Adding an aluminum core, on the other hand, would not necessarily enhance the strength of the electromagnet as aluminum is not a ferromagnetic material."
     },
@@ -39,7 +39,7 @@
         "option2": "has a higher density.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "59%",
+        "ai_confidence": "65%",
         "ai_is_correct": true,
         "ai_explanation": "The higher density of saltwater allows sound waves to travel faster because the particles are closer together, facilitating the transmission of energy. This density difference results in a greater speed of sound in saltwater compared to freshwater. The increased density of saltwater also leads to a higher acoustic impedance, which further aids in the faster propagation of sound waves."
     },
@@ -50,7 +50,7 @@
         "option2": "Hurricane",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "86%",
+        "ai_confidence": "80%",
         "ai_is_correct": true,
         "ai_explanation": "The weather event that typically involves heavy precipitation, strong winds, and subzero temperatures is characterized by freezing conditions and snowfall. This phenomenon is often associated with low visibility due to blowing snow and can create dangerous travel conditions. Additionally, this type of weather event is more commonly experienced in colder regions where temperatures regularly drop below freezing."
     },
@@ -61,7 +61,7 @@
         "option2": "is a form of bacteria.",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "54%",
+        "ai_confidence": "62%",
         "ai_is_correct": false,
         "ai_explanation": "The discovery of a new species of complex organism at the bottom of the ocean suggests that it is likely a form of bacteria. Bacteria are known to thrive in extreme environments such as the deep sea, where they can form complex structures and exhibit diverse behaviors. This new organism may be a unique and specialized type of bacteria that has evolved to survive in the harsh conditions of the ocean floor."
     },
@@ -71,10 +71,10 @@
         "option1": "Wind farms alter the regional climate.",
         "option2": "Wind farms can disrupt migrating wildlife.",
         "correct_option": 2,
-        "ai_prediction": 1,
-        "ai_confidence": "55%",
-        "ai_is_correct": false,
-        "ai_explanation": "Constructing a large-scale wind farm to generate electricity may have a significant impact on the regional climate. The installation of wind turbines can disrupt natural wind patterns and potentially alter local weather conditions. This can lead to changes in temperature, precipitation, and other environmental factors in the region where the wind farm is located."
+        "ai_prediction": 2,
+        "ai_confidence": "63%",
+        "ai_is_correct": true,
+        "ai_explanation": "Constructing a large-scale wind farm can disrupt migrating wildlife by altering their natural habitats and migration routes. The installation of wind turbines can create barriers that impede the movement of birds and other animals, leading to potential collisions with the structures. This disruption can have negative impacts on the local ecosystem and biodiversity, highlighting the environmental consequences of wind farm construction."
     },
     {
         "ai2arc_qid": "Mercury_7205153",
@@ -83,7 +83,7 @@
         "option2": "A definite volume.",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "75%",
+        "ai_confidence": "74%",
         "ai_is_correct": false,
         "ai_explanation": "Both small, solid samples of aluminum and large, liquid samples of aluminum are made up of the same type of atoms. This means that the number of atoms in each sample remains constant regardless of whether the aluminum is in solid or liquid form. This similarity in the composition of the samples highlights the consistency in the number of atoms present in both states of aluminum."
     },
@@ -94,7 +94,7 @@
         "option2": "Pulley",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "93%",
+        "ai_confidence": "84%",
         "ai_is_correct": true,
         "ai_explanation": "An inclined plane allows a load to be moved over a longer distance with less force required. By gradually raising the height of the load, the inclined plane reduces the amount of force needed to lift it directly. This simple machine effectively spreads out the work over a longer distance, making it easier to move heavy objects."
     },
@@ -105,7 +105,7 @@
         "option2": "The rate of heart beats slows.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "70%",
+        "ai_confidence": "71%",
         "ai_is_correct": true,
         "ai_explanation": "In a cold environment, the body needs to generate heat to maintain its normal temperature. Muscles shaking in small movements, known as shivering, is a mechanism that generates heat through muscle contractions. This helps to increase the body temperature and counteract the effects of the cold environment, ultimately helping the body maintain its normal temperature."
     },
@@ -116,7 +116,7 @@
         "option2": "Earthquake activity folded the rock layers.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "64%",
+        "ai_confidence": "68%",
         "ai_is_correct": true,
         "ai_explanation": "The presence of older rock layered on top of younger rock suggests a geological event like earthquake activity. Earthquakes can cause the folding and shifting of rock layers, leading to the older rock being pushed above the younger rock. This explanation aligns with the observed phenomenon and the principles of geology."
     },
@@ -127,7 +127,7 @@
         "option2": "Crude oil",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "59%",
+        "ai_confidence": "65%",
         "ai_is_correct": true,
         "ai_explanation": "When high temperatures are present during fossil-fuel formation, it leads to the breakdown of organic matter into simpler hydrocarbons. Natural gas is predominantly composed of methane, which is a simpler hydrocarbon compared to the complex mixture found in crude oil. Therefore, the high temperatures favor the formation of natural gas over crude oil due to the breakdown of organic matter into simpler hydrocarbons."
     },
@@ -138,7 +138,7 @@
         "option2": "Use a dustpan and broom",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "71%",
+        "ai_confidence": "72%",
         "ai_is_correct": true,
         "ai_explanation": "Using a dustpan and broom is the best method for safely retrieving broken glass because it allows for easy and efficient removal of the shards. This method also minimizes the risk of injury from sharp pieces and ensures that all fragments are properly disposed of. Additionally, using a chemical spill kit may not be necessary in this situation as the broken glass does not pose a chemical hazard."
     },
@@ -149,7 +149,7 @@
         "option2": "An electric stove",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "89%",
+        "ai_confidence": "82%",
         "ai_is_correct": false,
         "ai_explanation": "The device that is designed to transform electrical energy into useful heat energy is used to power machinery and perform mechanical work. This device converts electrical energy into kinetic energy, which is then converted into heat energy through friction and resistance. It is an essential component in various applications where heat production is required for operations."
     },
@@ -160,7 +160,7 @@
         "option2": "Food is used to absorb sunlight.",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "90%",
+        "ai_confidence": "82%",
         "ai_is_correct": false,
         "ai_explanation": "Plants need food to absorb sunlight in order to carry out photosynthesis, a process vital for their growth and survival. Without this food, plants would not be able to produce energy from sunlight, hindering their ability to grow. Therefore, the majority of the food that plants produce is essential for absorbing sunlight, rather than being stored for future use."
     },
@@ -171,7 +171,7 @@
         "option2": "Lack of moisture in the air.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "88%",
+        "ai_confidence": "81%",
         "ai_is_correct": true,
         "ai_explanation": "The low amount of rainfall in Nevada is likely due to the lack of moisture in the air. Without sufficient moisture, there is limited potential for rainfall to occur. This lack of moisture can be attributed to the dry climate and arid conditions present in the region."
     },
@@ -182,7 +182,7 @@
         "option2": "low pH",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "88%",
+        "ai_confidence": "81%",
         "ai_is_correct": false,
         "ai_explanation": "Water's ability to dissolve crystalline salts is due to its unique chemical properties. One of these properties is related to its pH level, which plays a crucial role in breaking down the ionic bonds present in salts. This characteristic allows water to effectively separate the positive and negative ions in the salt, making it a suitable solvent for crystalline salts."
     },
@@ -193,7 +193,7 @@
         "option2": "The number of their young will increase.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "76%",
+        "ai_confidence": "74%",
         "ai_is_correct": true,
         "ai_explanation": "When farmers plant fruit trees in a meadow, the rabbits living in the area may face a decrease in population size. This is because the trees may disrupt the rabbits' habitat, leading to a decrease in available food sources and shelter. With less resources to support their population, the rabbits may struggle to survive and reproduce at previous rates."
     },
@@ -203,10 +203,10 @@
         "option1": "An instinctive behavior.",
         "option2": "A response to crowding.",
         "correct_option": 1,
-        "ai_prediction": 2,
-        "ai_confidence": "54%",
-        "ai_is_correct": false,
-        "ai_explanation": "The migration of green sea turtles is influenced by external factors such as the need to find suitable nesting sites and avoid overcrowding. These turtles travel long distances to reproduce in areas with optimal conditions, indicating a response to environmental cues rather than an innate behavior. The decision to migrate is likely driven by the availability of resources and the avoidance of competition, rather than an inherent instinct."
+        "ai_prediction": 1,
+        "ai_confidence": "62%",
+        "ai_is_correct": true,
+        "ai_explanation": "The green sea turtles' annual migration of approximately 2000 km to reproduce is a remarkable example of a behavior that is ingrained in their genetic makeup. This instinctive behavior has been passed down through generations as a survival strategy, allowing them to return to the same beaches where they were born to lay their eggs. This long journey showcases the turtles' remarkable ability to navigate vast distances with precision and purpose."
     },
     {
         "ai2arc_qid": "Mercury_SC_408700",
@@ -215,7 +215,7 @@
         "option2": "conduction",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "76%",
+        "ai_confidence": "75%",
         "ai_is_correct": true,
         "ai_explanation": "When Emily stirred the tea with a spoon, the heat from the tea was transferred to the spoon through direct contact. This process is known as the transfer of heat through conduction, where heat energy is passed from one particle to another within a material. As the spoon absorbed the heat from the tea, its temperature increased, causing it to feel warm to the touch."
     },
@@ -226,7 +226,7 @@
         "option2": "temporary positive charges",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "61%",
+        "ai_confidence": "66%",
         "ai_is_correct": false,
         "ai_explanation": "When individual hair strands stand on end due to static electricity, they are attracted to one another, which indicates a common charge. If the hair strands had temporary positive charges, they would repel each other rather than stand on end. Additionally, the fact that the hair strands remain in an upright position suggests that they possess a lasting charge, rather than a temporary one."
     },
@@ -237,7 +237,7 @@
         "option2": "One year was unusually dry.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "82%",
+        "ai_confidence": "78%",
         "ai_is_correct": true,
         "ai_explanation": "The narrow growth ring indicates a period of slow growth, which is often caused by environmental stress such as lack of water. This suggests that conditions were not optimal for plant growth, making it unlikely that crops would have thrived that year. Therefore, the best-supported conclusion is that the year was unusually dry."
     },
@@ -248,7 +248,7 @@
         "option2": "Solar-collection panels",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "65%",
+        "ai_confidence": "68%",
         "ai_is_correct": false,
         "ai_explanation": "By using biodegradable carpeting, the school will be reducing its reliance on nonrenewable resources. This environmentally-friendly choice aligns with sustainability goals and reduces the school's overall environmental impact. Additionally, the use of biodegradable materials can lead to a decrease in waste production and contribute to a healthier indoor environment for students and staff."
     },
@@ -259,7 +259,7 @@
         "option2": "The amount of water vapor increases as the atmospheric temperature increases.",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "85%",
+        "ai_confidence": "80%",
         "ai_is_correct": false,
         "ai_explanation": "As the atmospheric temperature increases, the air molecules move more rapidly and spread out, creating more space between them. This increased space means that there is less room for water vapor molecules to exist in the atmosphere, leading to a decrease in the total amount of water vapor that the atmosphere can hold. This relationship between temperature and the capacity of the atmosphere to hold water vapor is a fundamental principle in meteorology and atmospheric science."
     },
@@ -269,10 +269,10 @@
         "option1": "water temperature",
         "option2": "water pressure",
         "correct_option": 2,
-        "ai_prediction": 1,
-        "ai_confidence": "52%",
-        "ai_is_correct": false,
-        "ai_explanation": "As submarines descend into the ocean, scientists observe a significant increase in the temperature of the surrounding water. This change in temperature is a key indicator of the unique thermal properties of the deep ocean layers. The rising temperatures can be attributed to various factors such as geothermal activity, the absence of sunlight, and the density of the water at different depths. These temperature fluctuations play a crucial role in shaping the diverse ecosystems that exist in the deep ocean."
+        "ai_prediction": 2,
+        "ai_confidence": "61%",
+        "ai_is_correct": true,
+        "ai_explanation": "As submarines descend into the ocean, the weight of the water above them increases, causing a rise in pressure. This increase in pressure can be felt by the scientists inside the submarine and can have significant effects on the structural integrity of the vessel. Therefore, it is crucial for scientists to monitor and account for this change in pressure as they explore deeper parts of the ocean."
     },
     {
         "ai2arc_qid": "MCAS_2008_5_5616",
@@ -281,7 +281,7 @@
         "option2": "Boston is close to an ocean.",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "51%",
+        "ai_confidence": "61%",
         "ai_is_correct": false,
         "ai_explanation": "The high amount of moisture in the air over Boston can be attributed to its location at a low elevation. This lower elevation allows for the air to hold more moisture, leading to higher levels of humidity in the atmosphere. As a result, Boston experiences consistently high levels of moisture in the air throughout most of the year."
     },
@@ -292,7 +292,7 @@
         "option2": "Albumen",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "68%",
+        "ai_confidence": "70%",
         "ai_is_correct": true,
         "ai_explanation": "The clear, thick fluid inside the poultry egg that serves as protection for the embryo is a protein-rich substance that provides cushioning and support. This substance also helps to regulate temperature and moisture levels within the egg, creating an ideal environment for the developing embryo. Additionally, this fluid contains essential nutrients that are necessary for the embryo's growth and development."
     },
@@ -303,7 +303,7 @@
         "option2": "The elements in the group react with oxygen in similar ways.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "52%",
+        "ai_confidence": "61%",
         "ai_is_correct": true,
         "ai_explanation": "The elements in the first group of the periodic table, also known as the alkali metals, are known for their highly reactive nature when they come into contact with oxygen. These metals readily form oxides when exposed to air, which is a common characteristic among all the elements in this group. This reaction with oxygen is a defining feature of the alkali metals, setting them apart from other groups on the periodic table."
     },
@@ -314,7 +314,7 @@
         "option2": "Iron becomes rusty",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "82%",
+        "ai_confidence": "78%",
         "ai_is_correct": true,
         "ai_explanation": "The change where iron becomes rusty should be categorized as a chemical change because it involves a chemical reaction. When iron reacts with oxygen in the presence of water, it forms iron oxide, which is the reddish-brown rust. This transformation at the molecular level indicates a chemical change taking place. On the other hand, the evaporation of lake water is a physical change as it only involves a change in state from liquid to gas without altering the chemical composition of the water."
     },
@@ -325,7 +325,7 @@
         "option2": "spraying crops with chemicals",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "92%",
+        "ai_confidence": "83%",
         "ai_is_correct": true,
         "ai_explanation": "Digging a new landfill affects a small area of the environment because it is contained within the specific location where the landfill is being dug. In contrast, spraying crops with chemicals can result in the chemicals spreading beyond the intended area through runoff or drift, potentially affecting a larger area of the environment. Additionally, the effects of digging a new landfill are more localized and less likely to have long-term, widespread impacts compared to the potential consequences of widespread chemical use."
     }
