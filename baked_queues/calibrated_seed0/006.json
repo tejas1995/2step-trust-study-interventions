@@ -6,7 +6,7 @@
         "option2": "An electric stove",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "67%",
+        "ai_confidence": "62%",
         "ai_is_correct": true,
         "ai_explanation": "The device that is designed to transform electrical energy into useful heat energy is commonly used for cooking and is found in many kitchens. This device typically consists of heating elements that generate heat when electricity is supplied to them. The heat produced by this device is essential for cooking food and is a key feature of its functionality."
     },
@@ -17,7 +17,7 @@
         "option2": "A definite volume.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "64%",
+        "ai_confidence": "58%",
         "ai_is_correct": true,
         "ai_explanation": "Both a small, solid sample of aluminum and a large, liquid sample of aluminum have a definite volume because the volume of a substance is determined by the amount of space it occupies. In both cases, the aluminum atoms are packed closely together, whether in a solid or liquid state, resulting in a specific volume for each sample. This shared characteristic of having a definite volume is a fundamental property of matter that remains consistent regardless of the state of the substance."
     },
@@ -28,7 +28,7 @@
         "option2": "Albumen",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "67%",
+        "ai_confidence": "63%",
         "ai_is_correct": false,
         "ai_explanation": "The clear, thick fluid inside the poultry egg that serves as protection for the embryo is the yolk sac. This sac contains essential nutrients and proteins that are necessary for the embryo's development. It plays a crucial role in providing the embryo with the necessary sustenance until it is ready to hatch. The yolk sac also helps to cushion and protect the developing embryo from any potential external harm."
     },
@@ -39,7 +39,7 @@
         "option2": "Consumers at the top level require more energy than the lower-level consumers.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "79%",
+        "ai_confidence": "83%",
         "ai_is_correct": true,
         "ai_explanation": "Consumers at the top level of a food pyramid generally require more energy to sustain themselves due to their higher metabolic rates and larger body sizes. This means they need to consume a larger quantity of lower-level organisms to meet their energy needs. As a result, there are fewer organisms at each successive trophic level as energy is lost and transferred up the food chain."
     },
@@ -50,7 +50,7 @@
         "option2": "The ability of offspring to reproduce",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "63%",
+        "ai_confidence": "55%",
         "ai_is_correct": false,
         "ai_explanation": "The concept of \"Survival of the fittest\" in natural selection revolves around the ability of organisms to adapt and thrive in their environment. Those individuals who can withstand environmental extremes are more likely to survive and pass on their genes to the next generation. This ability to endure and thrive in challenging conditions ensures that only the most well-adapted individuals will continue to reproduce and contribute to the gene pool."
     },
@@ -61,7 +61,7 @@
         "option2": "Use a dustpan and broom",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "84%",
+        "ai_confidence": "94%",
         "ai_is_correct": true,
         "ai_explanation": "Using a dustpan and broom is the best method for safely retrieving broken glass because it allows for easy and efficient removal of the shards. This method also minimizes the risk of injury from sharp pieces and ensures that all fragments are properly disposed of. Additionally, using a chemical spill kit may not be necessary in this situation as the broken glass does not pose a chemical hazard."
     },
@@ -72,7 +72,7 @@
         "option2": "is more elastic.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "77%",
+        "ai_confidence": "80%",
         "ai_is_correct": true,
         "ai_explanation": "The higher density of saltwater allows sound waves to travel faster because the particles are closer together, facilitating the transmission of energy. This density difference results in a greater speed of sound in saltwater compared to freshwater. The increased density of saltwater also leads to a higher acoustic impedance, which further aids in the faster propagation of sound waves."
     },
@@ -83,7 +83,7 @@
         "option2": "opening garbage can lids",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "66%",
+        "ai_confidence": "60%",
         "ai_is_correct": false,
         "ai_explanation": "Living in its environment, a bear would likely observe and learn from other animals that fish are a readily available food source. Fish are commonly found in rivers and streams, making them easily accessible for a bear to catch and eat. This behavior would be crucial for the bear's survival and would be reinforced through successful hunting experiences."
     },
@@ -94,7 +94,7 @@
         "option2": "They create energy.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "62%",
+        "ai_confidence": "53%",
         "ai_is_correct": true,
         "ai_explanation": "When lighting a match and baking a cake, new substances are indeed created through chemical reactions. In the case of lighting a match, the match head reacts with oxygen in the air to produce heat, light, and new compounds like carbon dioxide. Similarly, when baking a cake, ingredients like flour, sugar, and eggs undergo chemical changes through processes like fermentation and caramelization to form a completely different product. These transformations demonstrate the fundamental characteristic of chemical changes - the creation of new substances."
     },
@@ -104,10 +104,10 @@
         "option1": "Glacier",
         "option2": "Lake",
         "correct_option": 1,
-        "ai_prediction": 1,
-        "ai_confidence": "66%",
-        "ai_is_correct": true,
-        "ai_explanation": "The water in the glacier is likely the coldest because glaciers are formed by compacted snow and ice, which have very low temperatures. As the glacier melts, the water flows down the mountain, eventually reaching the lake. The water in the lake is exposed to the warmer air and sunlight, causing it to be warmer compared to the water in the glacier."
+        "ai_prediction": 2,
+        "ai_confidence": "61%",
+        "ai_is_correct": false,
+        "ai_explanation": "The water in the lake is further away from the melting glacier, allowing it more time to absorb heat from the surrounding environment. Additionally, the waterfall itself generates friction and heat as the water cascades down, contributing to a slight increase in temperature. As a result, the water in the lake is likely to be colder compared to the water directly coming from the melting glacier."
     },
     {
         "ai2arc_qid": "Mercury_7234465",
@@ -116,7 +116,7 @@
         "option2": "Natural gas",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "75%",
+        "ai_confidence": "76%",
         "ai_is_correct": true,
         "ai_explanation": "When high temperatures are present during fossil-fuel formation, it leads to the breakdown of organic matter into simpler hydrocarbons. Natural gas is predominantly composed of methane, which is a simpler hydrocarbon compared to the complex mixture found in crude oil. Therefore, the high temperatures favor the formation of natural gas over crude oil due to the breakdown of organic matter into simpler hydrocarbons."
     },
@@ -127,7 +127,7 @@
         "option2": "The furnace will automatically turn on.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "74%",
+        "ai_confidence": "75%",
         "ai_is_correct": true,
         "ai_explanation": "When the temperature in the house is cooler than the temperature selected on the thermostat, the furnace will need to kick in to bring the temperature back up to the desired level. This is a common function of thermostats and furnaces working together to maintain a comfortable temperature inside the house. The furnace turning on is a normal response to the discrepancy in temperatures, allowing the system to regulate and maintain the desired temperature setting."
     },
@@ -138,7 +138,7 @@
         "option2": "The elements in the group react with oxygen in similar ways.",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "80%",
+        "ai_confidence": "87%",
         "ai_is_correct": false,
         "ai_explanation": "The elements in the first group of the periodic table, known as the alkali metals, are all very unreactive. This is due to their low electronegativity and tendency to lose electrons easily, making them stable in their elemental form. Their reactivity with oxygen is not a defining characteristic of this group, as their primary reactivity lies in their ability to readily lose electrons to form positively charged ions."
     },
@@ -149,7 +149,7 @@
         "option2": "The size of their population will decrease.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "84%",
+        "ai_confidence": "94%",
         "ai_is_correct": true,
         "ai_explanation": "When farmers plant fruit trees in a meadow, the rabbits living in the area may face a decrease in population size. This is because the trees may disrupt the rabbits' habitat, leading to a decrease in available food sources and shelter. With less resources to support their population, the rabbits may struggle to survive and reproduce at previous rates."
     },
@@ -160,7 +160,7 @@
         "option2": "Carbon dioxide",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "63%",
+        "ai_confidence": "56%",
         "ai_is_correct": true,
         "ai_explanation": "During photosynthesis, trees absorb carbon dioxide and water to produce glucose and oxygen. The oxygen produced is released into the air as a byproduct of this process. This oxygen is essential for the survival of many living organisms, including humans, as it is used in respiration to produce energy. Therefore, the gas released by trees during photosynthesis is crucial for sustaining life on Earth."
     },
@@ -171,7 +171,7 @@
         "option2": "temporary positive charges",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "74%",
+        "ai_confidence": "76%",
         "ai_is_correct": true,
         "ai_explanation": "When hair strands stand on end due to static electricity, they are experiencing a temporary phenomenon. This is because static electricity is caused by an imbalance of positive and negative charges, leading to a buildup of charge on the hair strands. As a result, the hair strands temporarily acquire a positive charge, causing them to repel each other and stand on end. This charge is not permanent and will dissipate once the imbalance is resolved."
     },
@@ -182,7 +182,7 @@
         "option2": "strong polarity",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "66%",
+        "ai_confidence": "61%",
         "ai_is_correct": true,
         "ai_explanation": "Water's strong polarity allows it to interact with the charged ions in crystalline salts, breaking them apart and dissolving them. This is because water molecules are polar, with oxygen being more electronegative than hydrogen, creating a partial negative charge near the oxygen and partial positive charges near the hydrogen atoms. This polarity allows water molecules to surround and solvate the ions in the salt, leading to the dissolution of the salt in water."
     },
@@ -193,7 +193,7 @@
         "option2": "Earthworms making holes in the ground near the tree.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "79%",
+        "ai_confidence": "84%",
         "ai_is_correct": true,
         "ai_explanation": "The presence of holes in the ground near the tree allows for better aeration of the soil, which in turn helps the roots to access the oxygen they need. Earthworms are known for creating tunnels and burrows in the soil, which can improve soil structure and oxygen levels. This activity benefits the tree by ensuring that oxygen is readily available for the roots near the surface."
     },
@@ -204,7 +204,7 @@
         "option2": "Boston is close to an ocean.",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "76%",
+        "ai_confidence": "78%",
         "ai_is_correct": false,
         "ai_explanation": "The high amount of moisture in the air over Boston can be attributed to its location at a low elevation. This lower elevation allows for the air to hold more moisture, leading to higher levels of humidity in the atmosphere. As a result, Boston experiences consistently high levels of moisture in the air throughout most of the year."
     },
@@ -215,7 +215,7 @@
         "option2": "Crops grew well that year.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "75%",
+        "ai_confidence": "78%",
         "ai_is_correct": true,
         "ai_explanation": "The narrow growth ring indicates a period of slow growth, which is often caused by environmental stress such as lack of water. This suggests that conditions were not optimal for plant growth, making it unlikely that crops would have thrived that year. Therefore, the best-supported conclusion is that the year was unusually dry."
     },
@@ -237,7 +237,7 @@
         "option2": "Lake water evaporates",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "74%",
+        "ai_confidence": "75%",
         "ai_is_correct": true,
         "ai_explanation": "The change where iron becomes rusty should be categorized as a chemical change because it involves a chemical reaction. When iron reacts with oxygen in the presence of water, it forms iron oxide, which is the reddish-brown rust. This transformation at the molecular level indicates a chemical change taking place. On the other hand, the evaporation of lake water is a physical change as it only involves a change in state from liquid to gas without altering the chemical composition of the water."
     },
@@ -248,7 +248,7 @@
         "option2": "Staying over a warm body of water for a long time.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "80%",
+        "ai_confidence": "86%",
         "ai_is_correct": true,
         "ai_explanation": "When a hurricane moves over a continent, it loses its main source of energy which is the warm ocean water. Without the warm water to fuel the storm, the hurricane will gradually weaken as it moves inland. On the other hand, staying over a warm body of water for a long time allows the hurricane to continue to strengthen due to the continuous source of warm, moist air."
     },
@@ -259,7 +259,7 @@
         "option2": "Plant roots grow in rocks, breaking the rocks.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "78%",
+        "ai_confidence": "82%",
         "ai_is_correct": true,
         "ai_explanation": "Plants with roots that grow in rocks can contribute to erosion by physically breaking apart the rocks as the roots expand and push against them. This process can weaken the rocks over time, leading to their eventual breakdown and erosion. In contrast, plants that slow the runoff of water and soil actually help prevent erosion by reducing the speed and impact of water flow, thereby protecting the soil from being washed away."
     },
@@ -270,7 +270,7 @@
         "option2": "is a form of bacteria.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "75%",
+        "ai_confidence": "77%",
         "ai_is_correct": true,
         "ai_explanation": "The discovery of a new species of a complex organism suggests that it is likely made up of multiple cells, as complex organisms typically have specialized cells that work together to carry out various functions. This complexity indicates a higher level of organization and differentiation than what is typically seen in single-celled organisms like bacteria. The ability to form multiple cells allows for greater specialization and adaptability, which would be advantageous for surviving in the diverse and challenging environment of the ocean floor."
     },
@@ -281,7 +281,7 @@
         "option2": "Leaves",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "80%",
+        "ai_confidence": "85%",
         "ai_is_correct": true,
         "ai_explanation": "Leaves are an essential part of a plant's structure that serve multiple functions, including photosynthesis, gas exchange, and transpiration. They contain specialized cells and tissues that work together to capture sunlight and convert it into energy for the plant. Additionally, leaves play a crucial role in regulating water levels and temperature within the plant. Overall, these features demonstrate how this part of the plant functions as a vital organ for its survival and growth."
     },
@@ -292,7 +292,7 @@
         "option2": "digging a new landfill",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "65%",
+        "ai_confidence": "59%",
         "ai_is_correct": true,
         "ai_explanation": "Digging a new landfill affects a small area of the environment because it is contained within the specific location where the landfill is being dug. In contrast, spraying crops with chemicals can result in the chemicals spreading beyond the intended area through runoff or drift, potentially affecting a larger area of the environment. Additionally, the effects of digging a new landfill are more localized and less likely to have long-term, widespread impacts compared to the potential consequences of widespread chemical use."
     },
@@ -303,7 +303,7 @@
         "option2": "moisture on the outside of the plane freezes due to colder air at higher altitudes.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "69%",
+        "ai_confidence": "65%",
         "ai_is_correct": true,
         "ai_explanation": "As an airplane ascends to higher altitudes, the outside air temperature decreases significantly. This drop in temperature causes any moisture present on the plane's surface to freeze, leading to the formation of ice crystals. This phenomenon is a result of the colder air at higher altitudes, rather than any friction with the atmosphere."
     },
@@ -314,7 +314,7 @@
         "option2": "Weathering changed the layering of the rocks.",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "67%",
+        "ai_confidence": "62%",
         "ai_is_correct": false,
         "ai_explanation": "In this scenario, the presence of older rock layered on top of younger rock suggests that some form of weathering or erosion must have occurred to disrupt the natural order of sediment deposition. This process would have altered the layering of the rocks, leading to the observed geological phenomenon. Additionally, if earthquake activity had been the cause, the layers would have likely been folded or deformed rather than simply layered on top of each other."
     },
@@ -324,9 +324,9 @@
         "option1": "a decrease in the distance between the copper particles",
         "option2": "an increase in the motion of the copper particles",
         "correct_option": 2,
-        "ai_prediction": 2,
-        "ai_confidence": "60%",
-        "ai_is_correct": true,
-        "ai_explanation": "When a material like copper is heated, the temperature increase is typically due to the increased motion of its particles. As heat is added, the particles gain kinetic energy and move more rapidly, leading to a rise in temperature. On the other hand, a decrease in the distance between particles would not directly cause a temperature increase, as closer proximity alone does not necessarily result in higher temperatures."
+        "ai_prediction": 1,
+        "ai_confidence": "51%",
+        "ai_is_correct": false,
+        "ai_explanation": "When considering a temperature increase in a copper wire, the key factor to focus on is the distance between copper particles. This distance plays a crucial role in determining how efficiently heat is transferred within the wire. As the distance between copper particles decreases, the likelihood of collisions and interactions between particles increases, leading to a rise in temperature. This phenomenon is a result of the close proximity allowing for more effective transfer of thermal energy."
     }
 ]

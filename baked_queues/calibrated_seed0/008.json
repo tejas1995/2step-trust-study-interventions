@@ -6,7 +6,7 @@
         "option2": "friction with the atmosphere causes ice to develop.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "80%",
+        "ai_confidence": "85%",
         "ai_is_correct": true,
         "ai_explanation": "As an airplane ascends to higher altitudes, the outside air temperature decreases significantly. This drop in temperature causes any moisture present on the plane's surface to freeze, leading to the formation of ice crystals. This phenomenon is a result of the colder air at higher altitudes, rather than any friction with the atmosphere."
     },
@@ -17,7 +17,7 @@
         "option2": "A lung",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "69%",
+        "ai_confidence": "66%",
         "ai_is_correct": false,
         "ai_explanation": "The loss of one of these organs would be detrimental to a person's survival. However, one of these organs plays a crucial role in the oxygenation of the blood and removal of carbon dioxide, which are essential processes for sustaining life. Without this organ, the body would not be able to function properly and could lead to death."
     },
@@ -28,7 +28,7 @@
         "option2": "Glacier",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "76%",
+        "ai_confidence": "79%",
         "ai_is_correct": false,
         "ai_explanation": "The water in the lake is further away from the melting glacier, allowing it more time to absorb heat from the surrounding environment. Additionally, the waterfall itself generates friction and heat as the water cascades down, contributing to a slight increase in temperature. As a result, the water in the lake is likely to be colder compared to the water directly coming from the melting glacier."
     },
@@ -39,7 +39,7 @@
         "option2": "Muscles shake in small movements.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "82%",
+        "ai_confidence": "90%",
         "ai_is_correct": true,
         "ai_explanation": "In a cold environment, the body needs to generate heat to maintain its normal temperature. Muscles shaking in small movements, known as shivering, is a mechanism that generates heat through muscle contractions. This helps to increase the body temperature and counteract the effects of the cold environment, ultimately helping the body maintain its normal temperature."
     },
@@ -50,7 +50,7 @@
         "option2": "By creating a hole in the ozone layer.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "77%",
+        "ai_confidence": "81%",
         "ai_is_correct": true,
         "ai_explanation": "Burning fossil fuels releases harmful particles into the air, such as soot and ash, which can contribute to particle pollution. These particles can be inhaled deep into the lungs, causing respiratory issues and exacerbating conditions like asthma. The presence of particle pollution in the air has been linked to a variety of health problems, making it a significant factor in the decline of air quality caused by burning fossil fuels."
     },
@@ -61,7 +61,7 @@
         "option2": "Plant roots grow in rocks, breaking the rocks.",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "60%",
+        "ai_confidence": "51%",
         "ai_is_correct": false,
         "ai_explanation": "Plants play a crucial role in reducing erosion by slowing down the flow of water and soil. This allows the soil to absorb more water, preventing it from being washed away. By creating a barrier against runoff, plants help to stabilize the soil and prevent erosion from occurring. This process is essential in maintaining the integrity of the land and protecting against environmental damage."
     },
@@ -72,7 +72,7 @@
         "option2": "Cold air is pushed to high altitudes.",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "67%",
+        "ai_confidence": "62%",
         "ai_is_correct": false,
         "ai_explanation": "When a cold air mass interacts with a warm, moist air mass, the warm air is less dense and tends to rise above the cold air. As the warm air rises, it cools and condenses, leading to the formation of clouds and potentially precipitation. This process can push the cold air mass to higher altitudes as the warm air continues to rise, creating a boundary between the two air masses."
     },
@@ -83,7 +83,7 @@
         "option2": "Pulley",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "62%",
+        "ai_confidence": "54%",
         "ai_is_correct": true,
         "ai_explanation": "An inclined plane allows a load to be moved over a longer distance with less force required. By gradually raising the height of the load, the inclined plane reduces the amount of force needed to lift it directly. This simple machine effectively spreads out the work over a longer distance, making it easier to move heavy objects."
     },
@@ -94,7 +94,7 @@
         "option2": "The size of their population will decrease.",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "82%",
+        "ai_confidence": "89%",
         "ai_is_correct": false,
         "ai_explanation": "When farmers plant fruit trees in a meadow, the rabbits living in the area will likely benefit from the increased availability of food sources. This abundance of food can lead to improved nutrition for the rabbits, resulting in healthier individuals and potentially higher reproductive rates. With more food available, the rabbits may have more resources to support larger litters of young, leading to an increase in their population."
     },
@@ -105,7 +105,7 @@
         "option2": "Consumers at the top level require more energy than the lower-level consumers.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "84%",
+        "ai_confidence": "93%",
         "ai_is_correct": true,
         "ai_explanation": "Consumers at the top level of a food pyramid generally require more energy to sustain themselves due to their higher metabolic rates and larger body sizes. This means they need to consume a larger quantity of lower-level organisms to meet their energy needs. As a result, there are fewer organisms at each successive trophic level as energy is lost and transferred up the food chain."
     },
@@ -116,7 +116,7 @@
         "option2": "is more elastic.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "83%",
+        "ai_confidence": "92%",
         "ai_is_correct": true,
         "ai_explanation": "The higher density of saltwater allows sound waves to travel faster because the particles are closer together, facilitating the transmission of energy. This density difference results in a greater speed of sound in saltwater compared to freshwater. The increased density of saltwater also leads to a higher acoustic impedance, which further aids in the faster propagation of sound waves."
     },
@@ -127,7 +127,7 @@
         "option2": "They combine with water to form new elements.",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "66%",
+        "ai_confidence": "61%",
         "ai_is_correct": false,
         "ai_explanation": "When sugar is dissolved in water, the molecules of sugar interact with the molecules of water through hydrogen bonding. This interaction causes the sugar molecules to break apart and become surrounded by water molecules, forming a homogeneous mixture. The sugar molecules do not remain as individual entities but rather become integrated into the water molecules, creating a new molecular structure."
     },
@@ -138,7 +138,7 @@
         "option2": "Natural gas",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "75%",
+        "ai_confidence": "77%",
         "ai_is_correct": true,
         "ai_explanation": "When high temperatures are present during fossil-fuel formation, it leads to the breakdown of organic matter into simpler hydrocarbons. Natural gas is predominantly composed of methane, which is a simpler hydrocarbon compared to the complex mixture found in crude oil. Therefore, the high temperatures favor the formation of natural gas over crude oil due to the breakdown of organic matter into simpler hydrocarbons."
     },
@@ -160,7 +160,7 @@
         "option2": "The amount of water vapor decreases as the atmospheric temperature increases.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "79%",
+        "ai_confidence": "84%",
         "ai_is_correct": true,
         "ai_explanation": "As the atmospheric temperature increases, the air molecules gain energy and move faster, allowing them to hold more water vapor. This is due to the fact that warmer air has a higher capacity for holding water vapor compared to cooler air. Therefore, as the temperature of the atmosphere rises, the total amount of water vapor that the atmosphere can hold also increases."
     },
@@ -171,7 +171,7 @@
         "option2": "Spores",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "77%",
+        "ai_confidence": "81%",
         "ai_is_correct": false,
         "ai_explanation": "Spores play a crucial role in reproduction for many plants, serving as a means of dispersing genetic material to create new organisms. They are essential for the survival and propagation of plant species. While leaves are important for photosynthesis and gas exchange, spores have a distinct function as reproductive structures, making them a vital organ in the plant's life cycle."
     },
@@ -182,7 +182,7 @@
         "option2": "They create energy.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "69%",
+        "ai_confidence": "66%",
         "ai_is_correct": true,
         "ai_explanation": "When lighting a match and baking a cake, new substances are indeed created through chemical reactions. In the case of lighting a match, the match head reacts with oxygen in the air to produce heat, light, and new compounds like carbon dioxide. Similarly, when baking a cake, ingredients like flour, sugar, and eggs undergo chemical changes through processes like fermentation and caramelization to form a completely different product. These transformations demonstrate the fundamental characteristic of chemical changes - the creation of new substances."
     },
@@ -193,7 +193,7 @@
         "option2": "An electric motor",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "68%",
+        "ai_confidence": "65%",
         "ai_is_correct": true,
         "ai_explanation": "The device that is designed to transform electrical energy into useful heat energy is commonly used for cooking and is found in many kitchens. This device typically consists of heating elements that generate heat when electricity is supplied to them. The heat produced by this device is essential for cooking food and is a key feature of its functionality."
     },
@@ -204,7 +204,7 @@
         "option2": "water pressure",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "83%",
+        "ai_confidence": "91%",
         "ai_is_correct": true,
         "ai_explanation": "As submarines descend into the ocean, the weight of the water above them increases, causing a rise in pressure. This increase in pressure can be felt by the scientists inside the submarine and can have significant effects on the structural integrity of the vessel. Therefore, it is crucial for scientists to monitor and account for this change in pressure as they explore deeper parts of the ocean."
     },
@@ -215,7 +215,7 @@
         "option2": "Solar-collection panels",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "74%",
+        "ai_confidence": "75%",
         "ai_is_correct": true,
         "ai_explanation": "Installing solar-collection panels will most likely reduce a school's consumption of nonrenewable resources because they harness energy from the sun, a renewable source, to generate electricity. This means less reliance on fossil fuels like coal or oil, which are finite resources. Additionally, solar panels have a long lifespan and require minimal maintenance, making them a sustainable and cost-effective choice for reducing the school's environmental impact."
     },
@@ -226,7 +226,7 @@
         "option2": "It decreases the speed and power of muscle contractions.",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "62%",
+        "ai_confidence": "53%",
         "ai_is_correct": false,
         "ai_explanation": "Smoking tobacco can have a negative impact on an individual's physical abilities by affecting the speed and power of muscle contractions. This is because tobacco smoke contains harmful chemicals that can damage muscle tissue and impair muscle function. As a result, individuals who smoke may experience reduced strength and endurance during physical activities, ultimately hindering their performance and success."
     },
@@ -237,7 +237,7 @@
         "option2": "An instinctive behavior.",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "61%",
+        "ai_confidence": "52%",
         "ai_is_correct": false,
         "ai_explanation": "The migration of green sea turtles is influenced by external factors such as the need to find suitable nesting sites and avoid overcrowding. These turtles travel long distances to reproduce in areas with optimal conditions, indicating a response to environmental cues rather than an innate behavior. The decision to migrate is likely driven by the availability of resources and the avoidance of competition, rather than an inherent instinct."
     },
@@ -248,7 +248,7 @@
         "option2": "Clay soils because they are heavy soils and retain water.",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "68%",
+        "ai_confidence": "64%",
         "ai_is_correct": false,
         "ai_explanation": "Clay soils are heavy and have a high water retention capacity, making them ideal for planting a productive garden. These soils hold onto water well, ensuring that plants have a constant water supply even during dry periods. This characteristic is crucial for the healthy growth of garden plants and maximizing their productivity."
     },
@@ -259,7 +259,7 @@
         "option2": "Moving over a continent.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "70%",
+        "ai_confidence": "68%",
         "ai_is_correct": true,
         "ai_explanation": "When a hurricane moves over a continent, it loses its main source of energy which is the warm ocean water. Without the warm water to fuel the storm, the hurricane will gradually weaken as it moves inland. On the other hand, staying over a warm body of water for a long time allows the hurricane to continue to strengthen due to the continuous source of warm, moist air."
     },
@@ -270,7 +270,7 @@
         "option2": "Chemical energy",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "70%",
+        "ai_confidence": "68%",
         "ai_is_correct": true,
         "ai_explanation": "Chemical energy is stored within the bonds of molecules and can be released during a chemical reaction. This type of energy is a form of potential energy because it has the potential to be converted into other forms of energy, such as heat or kinetic energy. Radiant energy, on the other hand, is a form of kinetic energy that is transmitted in waves or particles."
     },
@@ -281,7 +281,7 @@
         "option2": "Yolk sac",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "64%",
+        "ai_confidence": "57%",
         "ai_is_correct": false,
         "ai_explanation": "The clear, thick fluid inside the poultry egg that serves as protection for the embryo is the yolk sac. This sac contains essential nutrients and proteins that are necessary for the embryo's development. It plays a crucial role in providing the embryo with the necessary sustenance until it is ready to hatch. The yolk sac also helps to cushion and protect the developing embryo from any potential external harm."
     },
@@ -292,7 +292,7 @@
         "option2": "The amount of water vapor increases as the atmospheric temperature increases.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "78%",
+        "ai_confidence": "82%",
         "ai_is_correct": true,
         "ai_explanation": "As the atmospheric temperature increases, the air molecules gain energy and move faster, allowing them to hold more water vapor. This is due to the fact that warmer air has a higher capacity for holding water vapor compared to cooler air. Therefore, as the temperature of the atmosphere rises, the total amount of water vapor that the atmosphere can hold also increases."
     },
@@ -303,7 +303,7 @@
         "option2": "The furnace will overheat.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "78%",
+        "ai_confidence": "83%",
         "ai_is_correct": true,
         "ai_explanation": "When the temperature in the house is cooler than the temperature selected on the thermostat, the furnace will need to kick in to bring the temperature back up to the desired level. This is a common function of thermostats and furnaces working together to maintain a comfortable temperature inside the house. The furnace turning on is a normal response to the discrepancy in temperatures, allowing the system to regulate and maintain the desired temperature setting."
     },
@@ -314,7 +314,7 @@
         "option2": "Food is stored for future use.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "84%",
+        "ai_confidence": "93%",
         "ai_is_correct": true,
         "ai_explanation": "Plants produce food through photosynthesis, converting sunlight into energy. This food is essential for their growth and development. Since plants cannot consume their food immediately, they store it in various parts of their structure for future use, such as in roots, stems, and leaves. This stored food allows plants to survive during periods of limited sunlight or nutrients, ensuring their continued growth and reproduction."
     },
@@ -325,7 +325,7 @@
         "option2": "Use a chemical spill kit",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "62%",
+        "ai_confidence": "54%",
         "ai_is_correct": true,
         "ai_explanation": "Using a dustpan and broom is the best method for safely retrieving broken glass because it allows for easy and efficient removal of the shards. This method also minimizes the risk of injury from sharp pieces and ensures that all fragments are properly disposed of. Additionally, using a chemical spill kit may not be necessary in this situation as the broken glass does not pose a chemical hazard."
     }

@@ -6,7 +6,7 @@
         "option2": "It decreases the speed and power of muscle contractions.",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "64%",
+        "ai_confidence": "57%",
         "ai_is_correct": false,
         "ai_explanation": "Smoking tobacco can have a negative impact on an individual's physical abilities by affecting the speed and power of muscle contractions. This is because tobacco smoke contains harmful chemicals that can damage muscle tissue and impair muscle function. As a result, individuals who smoke may experience reduced strength and endurance during physical activities, ultimately hindering their performance and success."
     },
@@ -17,7 +17,7 @@
         "option2": "Lack of moisture in the air.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "79%",
+        "ai_confidence": "83%",
         "ai_is_correct": true,
         "ai_explanation": "The low amount of rainfall in Nevada is likely due to the lack of moisture in the air. Without sufficient moisture, there is limited potential for rainfall to occur. This lack of moisture can be attributed to the dry climate and arid conditions present in the region."
     },
@@ -39,7 +39,7 @@
         "option2": "Weathering changed the layering of the rocks.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "69%",
+        "ai_confidence": "66%",
         "ai_is_correct": true,
         "ai_explanation": "The presence of older rock layered on top of younger rock suggests a geological event like earthquake activity. Earthquakes can cause the folding and shifting of rock layers, leading to the older rock being pushed above the younger rock. This explanation aligns with the observed phenomenon and the principles of geology."
     },
@@ -50,7 +50,7 @@
         "option2": "The ability of offspring to reproduce",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "75%",
+        "ai_confidence": "77%",
         "ai_is_correct": false,
         "ai_explanation": "The concept of \"Survival of the fittest\" in natural selection revolves around the ability of organisms to adapt and thrive in their environment. Those individuals who can withstand environmental extremes are more likely to survive and pass on their genes to the next generation. This ability to endure and thrive in challenging conditions ensures that only the most well-adapted individuals will continue to reproduce and contribute to the gene pool."
     },
@@ -61,7 +61,7 @@
         "option2": "A response to crowding.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "78%",
+        "ai_confidence": "82%",
         "ai_is_correct": true,
         "ai_explanation": "The green sea turtles' annual migration of approximately 2000 km to reproduce is a remarkable example of a behavior that is ingrained in their genetic makeup. This instinctive behavior has been passed down through generations as a survival strategy, allowing them to return to the same beaches where they were born to lay their eggs. This long journey showcases the turtles' remarkable ability to navigate vast distances with precision and purpose."
     },
@@ -72,7 +72,7 @@
         "option2": "They create new substances.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "81%",
+        "ai_confidence": "87%",
         "ai_is_correct": true,
         "ai_explanation": "When lighting a match and baking a cake, new substances are indeed created through chemical reactions. In the case of lighting a match, the match head reacts with oxygen in the air to produce heat, light, and new compounds like carbon dioxide. Similarly, when baking a cake, ingredients like flour, sugar, and eggs undergo chemical changes through processes like fermentation and caramelization to form a completely different product. These transformations demonstrate the fundamental characteristic of chemical changes - the creation of new substances."
     },
@@ -83,7 +83,7 @@
         "option2": "Blizzard",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "77%",
+        "ai_confidence": "81%",
         "ai_is_correct": true,
         "ai_explanation": "The weather event that typically involves heavy precipitation, strong winds, and subzero temperatures is characterized by freezing conditions and snowfall. This phenomenon is often associated with low visibility due to blowing snow and can create dangerous travel conditions. Additionally, this type of weather event is more commonly experienced in colder regions where temperatures regularly drop below freezing."
     },
@@ -94,7 +94,7 @@
         "option2": "Staying over a warm body of water for a long time.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "76%",
+        "ai_confidence": "79%",
         "ai_is_correct": true,
         "ai_explanation": "When a hurricane moves over a continent, it loses its main source of energy which is the warm ocean water. Without the warm water to fuel the storm, the hurricane will gradually weaken as it moves inland. On the other hand, staying over a warm body of water for a long time allows the hurricane to continue to strengthen due to the continuous source of warm, moist air."
     },
@@ -105,7 +105,7 @@
         "option2": "Wind farms alter the regional climate.",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "61%",
+        "ai_confidence": "51%",
         "ai_is_correct": false,
         "ai_explanation": "Constructing a large-scale wind farm to generate electricity may have a significant impact on the regional climate. The installation of wind turbines can disrupt natural wind patterns and potentially alter local weather conditions. This can lead to changes in temperature, precipitation, and other environmental factors in the region where the wind farm is located."
     },
@@ -116,7 +116,7 @@
         "option2": "Oxygen",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "79%",
+        "ai_confidence": "85%",
         "ai_is_correct": true,
         "ai_explanation": "During photosynthesis, trees absorb carbon dioxide and water to produce glucose and oxygen. The oxygen produced is released into the air as a byproduct of this process. This oxygen is essential for the survival of many living organisms, including humans, as it is used in respiration to produce energy. Therefore, the gas released by trees during photosynthesis is crucial for sustaining life on Earth."
     },
@@ -127,7 +127,7 @@
         "option2": "digging a new landfill",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "71%",
+        "ai_confidence": "70%",
         "ai_is_correct": true,
         "ai_explanation": "Digging a new landfill affects a small area of the environment because it is contained within the specific location where the landfill is being dug. In contrast, spraying crops with chemicals can result in the chemicals spreading beyond the intended area through runoff or drift, potentially affecting a larger area of the environment. Additionally, the effects of digging a new landfill are more localized and less likely to have long-term, widespread impacts compared to the potential consequences of widespread chemical use."
     },
@@ -138,7 +138,7 @@
         "option2": "Muscles shake in small movements.",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "71%",
+        "ai_confidence": "70%",
         "ai_is_correct": false,
         "ai_explanation": "In a cold environment, the body needs to conserve heat to maintain its normal temperature. Slowing down the rate of heartbeats helps reduce blood flow to the extremities, which minimizes heat loss to the surroundings. This mechanism allows the body to focus on keeping vital organs warm and maintaining overall body temperature."
     },
@@ -149,7 +149,7 @@
         "option2": "water temperature",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "82%",
+        "ai_confidence": "90%",
         "ai_is_correct": true,
         "ai_explanation": "As submarines descend into the ocean, the weight of the water above them increases, causing a rise in pressure. This increase in pressure can be felt by the scientists inside the submarine and can have significant effects on the structural integrity of the vessel. Therefore, it is crucial for scientists to monitor and account for this change in pressure as they explore deeper parts of the ocean."
     },
@@ -160,7 +160,7 @@
         "option2": "Use a chemical spill kit",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "81%",
+        "ai_confidence": "88%",
         "ai_is_correct": true,
         "ai_explanation": "Using a dustpan and broom is the best method for safely retrieving broken glass because it allows for easy and efficient removal of the shards. This method also minimizes the risk of injury from sharp pieces and ensures that all fragments are properly disposed of. Additionally, using a chemical spill kit may not be necessary in this situation as the broken glass does not pose a chemical hazard."
     },
@@ -171,7 +171,7 @@
         "option2": "Earthworms making holes in the ground near the tree.",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "65%",
+        "ai_confidence": "58%",
         "ai_is_correct": false,
         "ai_explanation": "Woodpeckers play a crucial role in helping trees get oxygen by making holes in the tree itself. These holes allow for better air circulation within the tree, which in turn helps the roots near the surface receive the necessary oxygen. By creating these holes, woodpeckers indirectly support the tree's ability to access the oxygen it needs to survive and thrive."
     },
@@ -182,7 +182,7 @@
         "option2": "They exist in solution.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "81%",
+        "ai_confidence": "88%",
         "ai_is_correct": true,
         "ai_explanation": "When sugar is dissolved in water, the individual sugar molecules spread out and become surrounded by water molecules. This allows the sugar molecules to exist in a dispersed state throughout the water, forming a homogeneous solution. The sugar molecules do not chemically combine with the water molecules to form new elements; rather, they remain as individual entities within the solution."
     },
@@ -193,7 +193,7 @@
         "option2": "permanent positive charges",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "70%",
+        "ai_confidence": "68%",
         "ai_is_correct": true,
         "ai_explanation": "When hair strands stand on end due to static electricity, they are experiencing a temporary phenomenon. This is because static electricity is caused by an imbalance of positive and negative charges, leading to a buildup of charge on the hair strands. As a result, the hair strands temporarily acquire a positive charge, causing them to repel each other and stand on end. This charge is not permanent and will dissipate once the imbalance is resolved."
     },
@@ -204,7 +204,7 @@
         "option2": "The elements in the group react with oxygen in similar ways.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "60%",
+        "ai_confidence": "50%",
         "ai_is_correct": true,
         "ai_explanation": "The elements in the first group of the periodic table, also known as the alkali metals, are known for their highly reactive nature when they come into contact with oxygen. These metals readily form oxides when exposed to air, which is a common characteristic among all the elements in this group. This reaction with oxygen is a defining feature of the alkali metals, setting them apart from other groups on the periodic table."
     },
@@ -215,7 +215,7 @@
         "option2": "Leaves",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "85%",
+        "ai_confidence": "94%",
         "ai_is_correct": true,
         "ai_explanation": "Leaves are an essential part of a plant's structure that serve multiple functions, including photosynthesis, gas exchange, and transpiration. They contain specialized cells and tissues that work together to capture sunlight and convert it into energy for the plant. Additionally, leaves play a crucial role in regulating water levels and temperature within the plant. Overall, these features demonstrate how this part of the plant functions as a vital organ for its survival and growth."
     },
@@ -225,10 +225,10 @@
         "option1": "Plants slow the runoff of water and soil.",
         "option2": "Plant roots grow in rocks, breaking the rocks.",
         "correct_option": 2,
-        "ai_prediction": 2,
-        "ai_confidence": "65%",
-        "ai_is_correct": true,
-        "ai_explanation": "Plants with roots that grow in rocks can contribute to erosion by physically breaking apart the rocks as the roots expand and push against them. This process can weaken the rocks over time, leading to their eventual breakdown and erosion. In contrast, plants that slow the runoff of water and soil actually help prevent erosion by reducing the speed and impact of water flow, thereby protecting the soil from being washed away."
+        "ai_prediction": 1,
+        "ai_confidence": "59%",
+        "ai_is_correct": false,
+        "ai_explanation": "Plants play a crucial role in reducing erosion by slowing down the flow of water and soil. This allows the soil to absorb more water, preventing it from being washed away. By creating a barrier against runoff, plants help to stabilize the soil and prevent erosion from occurring. This process is essential in maintaining the integrity of the land and protecting against environmental damage."
     },
     {
         "ai2arc_qid": "Mercury_7234465",
@@ -237,7 +237,7 @@
         "option2": "Natural gas",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "82%",
+        "ai_confidence": "89%",
         "ai_is_correct": true,
         "ai_explanation": "When high temperatures are present during fossil-fuel formation, it leads to the breakdown of organic matter into simpler hydrocarbons. Natural gas is predominantly composed of methane, which is a simpler hydrocarbon compared to the complex mixture found in crude oil. Therefore, the high temperatures favor the formation of natural gas over crude oil due to the breakdown of organic matter into simpler hydrocarbons."
     },
@@ -248,7 +248,7 @@
         "option2": "Crops grew well that year.",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "63%",
+        "ai_confidence": "55%",
         "ai_is_correct": false,
         "ai_explanation": "The narrow tree-growth ring indicates a period of slow growth, which could be due to unfavorable conditions such as drought. However, if the crops grew well that year despite the narrow growth ring, it suggests that the tree was able to access enough resources to support crop growth. This implies that factors other than moisture availability may have influenced the tree's growth, leading to the conclusion that the crops grew well that year."
     },
@@ -259,7 +259,7 @@
         "option2": "The amount of water vapor decreases as the atmospheric temperature increases.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "76%",
+        "ai_confidence": "78%",
         "ai_is_correct": true,
         "ai_explanation": "As the atmospheric temperature increases, the air molecules gain energy and move faster, allowing them to hold more water vapor. This is due to the fact that warmer air has a higher capacity for holding water vapor compared to cooler air. Therefore, as the temperature of the atmosphere rises, the total amount of water vapor that the atmosphere can hold also increases."
     },
@@ -270,7 +270,7 @@
         "option2": "Food is used to absorb sunlight.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "80%",
+        "ai_confidence": "86%",
         "ai_is_correct": true,
         "ai_explanation": "Plants produce food through photosynthesis, converting sunlight into energy. This food is essential for their growth and development. Since plants cannot consume their food immediately, they store it in various parts of their structure for future use, such as in roots, stems, and leaves. This stored food allows plants to survive during periods of limited sunlight or nutrients, ensuring their continued growth and reproduction."
     },
@@ -281,7 +281,7 @@
         "option2": "The furnace will overheat.",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "63%",
+        "ai_confidence": "56%",
         "ai_is_correct": true,
         "ai_explanation": "When the temperature in the house is cooler than the temperature selected on the thermostat, the furnace will need to kick in to bring the temperature back up to the desired level. This is a common function of thermostats and furnaces working together to maintain a comfortable temperature inside the house. The furnace turning on is a normal response to the discrepancy in temperatures, allowing the system to regulate and maintain the desired temperature setting."
     },
@@ -292,7 +292,7 @@
         "option2": "By adding particle pollution.",
         "correct_option": 2,
         "ai_prediction": 2,
-        "ai_confidence": "63%",
+        "ai_confidence": "55%",
         "ai_is_correct": true,
         "ai_explanation": "Burning fossil fuels releases harmful particles into the air, such as soot and ash, which can contribute to particle pollution. These particles can be inhaled deep into the lungs, causing respiratory issues and exacerbating conditions like asthma. The presence of particle pollution in the air has been linked to a variety of health problems, making it a significant factor in the decline of air quality caused by burning fossil fuels."
     },
@@ -303,7 +303,7 @@
         "option2": "convection",
         "correct_option": 1,
         "ai_prediction": 1,
-        "ai_confidence": "61%",
+        "ai_confidence": "52%",
         "ai_is_correct": true,
         "ai_explanation": "When Emily stirred the tea with a spoon, the heat from the tea was transferred to the spoon through direct contact. This process is known as the transfer of heat through conduction, where heat energy is passed from one particle to another within a material. As the spoon absorbed the heat from the tea, its temperature increased, causing it to feel warm to the touch."
     },
@@ -314,7 +314,7 @@
         "option2": "The size of their population will decrease.",
         "correct_option": 2,
         "ai_prediction": 1,
-        "ai_confidence": "74%",
+        "ai_confidence": "75%",
         "ai_is_correct": false,
         "ai_explanation": "When farmers plant fruit trees in a meadow, the rabbits living in the area will likely benefit from the increased availability of food sources. This abundance of food can lead to improved nutrition for the rabbits, resulting in healthier individuals and potentially higher reproductive rates. With more food available, the rabbits may have more resources to support larger litters of young, leading to an increase in their population."
     },
@@ -325,7 +325,7 @@
         "option2": "an aluminum core",
         "correct_option": 1,
         "ai_prediction": 2,
-        "ai_confidence": "81%",
+        "ai_confidence": "88%",
         "ai_is_correct": false,
         "ai_explanation": "Using an aluminum core would likely increase the strength of the electromagnet because aluminum is a good conductor of electricity. This means that the flow of current through the electromagnet would be more efficient, resulting in a stronger magnetic field being generated. Additionally, aluminum is lightweight and can help reduce the overall weight of the electromagnet, potentially making it easier to handle and install."
     }
