@@ -2,7 +2,7 @@ import { DEVMODE } from "./globals"
 export var UID: string
 export var MOCKMODE: boolean = false
 import { load_data, log_data } from './connector'
-import { paramsToObject } from "./utils"
+import { paramsToObject, startTimer } from "./utils"
 //import { get_user_trust_effect, get_adjusted_ai_confidence} from "./run_user_models"
 
 let USER_MODELS_ROOT = "https://tejassrinivasan.pythonanywhere.com/"
@@ -289,196 +289,127 @@ async function find_best_aiconf_to_display(user_acceptance_likelihood_neutral_tr
 async function get_ai_assistance() {
     console.log("Getting AI assistance...")
 
-    intervention_details = {}
     let displayed_ai_confidence = question!["ai_confidence"]
     let user_current_trust_level = user_current_estimated_trust_level
     if (useUserReportedTrustVal) {
         user_current_trust_level = (user_reported_trust_level - 5) / 2.5
         console.log("Using user reported trust value: ", user_reported_trust_level)
     }
+    intervention_details = {
+        "intervention_applied": false, 
+        "trust_level_at_start_of_interaction": user_current_trust_level
+    
+    }
 
-    if (AIInterventionGoal == "none") {
+    if (AIInterventionType == "none" || (initial_user_decision == question!["ai_prediction"])) {
         // No intervention, just show the AI assistance that is already populated in the span
+        console.log("Not applying any intervention.")
         displayed_ai_confidence = question!["ai_confidence"]
-        intervention_details = {}
-    } 
-    else if (AIInterventionGoal == "mitigate_undertrust") {
-
-        if (user_current_trust_level < 0) {
-            
-            let aldiff_result = await examine_effect_of_trust_on_decision_making()            
-            let al_diff = aldiff_result["al_diff"]
-            console.log("User's likelihood of going with the AI's prediction: ", aldiff_result["actual_trust"]["acceptance_likelihood"])
-            console.log("User's likelihood of going with the AI's prediction with neutral trust: ", aldiff_result["neutral_trust"]["acceptance_likelihood"])
-            console.log("Acceptance Likelihood Diff: ", al_diff)
-            let user_acceptance_likelihood_neutral_trust = aldiff_result["neutral_trust"]["acceptance_likelihood"]
-            intervention_details["acceptance_likelihood_results"] = aldiff_result
-
-            intervention_condition_satisfied = false
-            if (al_diff >= InterventionALDiffThreshold) {
-                intervention_condition_satisfied = true
-            }
-            intervention_details["intervention_condition_satisfied"] = intervention_condition_satisfied
-            console.log("Intervention condition satisfied: ", intervention_condition_satisfied)
-
-            if (AIInterventionStrategy == "fixed" && initial_user_decision != question!["ai_prediction"]) {
-                // Fixed intervention strategy is applied whenever:
-                // 1. the user's trust is negative, and
-                // 2. the user's initial decision is different from the AI's prediction
-                console.log("Intervention allowed:", intervention_allowed_timesteps.includes(question_i))
-                if (!(intervention_allowed_timesteps.includes(question_i))) {
-                    console.log("Intervention not allowed at this timestep")
-                    displayed_ai_confidence = question!["ai_confidence"]
-                } else {
-
-                    if (AIInterventionType == "confidence_manip") {
-                        // Increase AI confidence by fixed amount
-                        let ai_confidence = Number(question!["ai_confidence"].replace("%", "")) / 100
-                        let new_confidence = Math.min(1, ai_confidence + InterventionFixedConfChange)
-                        displayed_ai_confidence = String(( new_confidence * 100).toFixed(0)) + "%"
-                        let confidence_inflation = (new_confidence - ai_confidence).toFixed(2)
-                        
-                        intervention_details["conf_actual"] = question!["ai_confidence"]
-                        intervention_details["conf_new"] = displayed_ai_confidence
-                        intervention_details["conf_inflation"] = confidence_inflation
-                        
-                        intervention_details["acceptance_likelihood-actualconf_actualtrust"] = aldiff_result["actual_trust"]["acceptance_likelihood"]
-                        intervention_details["acceptance_likelihood-actualconf_neutraltrust"] = aldiff_result["neutral_trust"]["acceptance_likelihood"]
-                        intervention_details["intervention_applied"] = true
-                    } 
-                    else if (AIInterventionType == "ai_explanation") {
-                        // Add AI explanation
-                        console.log("Showing explanation")
-                        let explanation_shown: string = !question!["ai_explanation"] ? "No explanation provided" : question!["ai_explanation"]
-                        $("#ai_explanation_span").html(explanation_shown)
-                        $("#ai_explanation_div").show()
-                        intervention_details["explanation_shown"] = explanation_shown
-                        intervention_details["intervention_applied"] = true
-                    } 
-                    else if (AIInterventionType == "none") {
-                        intervention_details["intervention_applied"] = false
-                    }
-                }
-                    
-            } 
-            else if (AIInterventionStrategy == "adaptive") {
-                console.log("Intervention condition satisfied: ", intervention_condition_satisfied)
-                console.log("Intervention allowed:", intervention_allowed_timesteps.includes(question_i))
-                console.log(question_i, intervention_allowed_timesteps)
-                if (intervention_condition_satisfied && intervention_allowed_timesteps.includes(question_i)) {
-                    if (AIInterventionType == "confidence_manip") {
-                        //Find nearest AI confidence with minimizing ALDiff
-                        findnewconf_result = await find_best_aiconf_to_display(user_acceptance_likelihood_neutral_trust)
-                        displayed_ai_confidence = String((findnewconf_result['new_conf_to_display'] * 100).toFixed(0)) + "%"  // Confidence in AI's prediction
-                        let ai_confidence = Number(question!["ai_confidence"].replace("%", "")) / 100
-                        let confidence_inflation = (findnewconf_result['new_conf_to_display'] - ai_confidence).toFixed(2)
-
-                        intervention_details["findnewconf_results"] = findnewconf_result
-                        intervention_details["conf_actual"] =  question!["ai_confidence"]
-                        intervention_details["conf_new"] =  displayed_ai_confidence
-                        intervention_details["conf_inflation"] = confidence_inflation
-
-                        intervention_details["acceptance_likelihood-actualconf_actualtrust"] =  aldiff_result["actual_trust"]["acceptance_likelihood"]
-                        intervention_details["acceptance_likelihood-actualconf_neutraltrust"] = aldiff_result["neutral_trust"]["acceptance_likelihood"]
-                        intervention_details["acceptance_likelihood-newconf_actualtrust"] = findnewconf_result["new_conf_acceptance_likelihood"]
-                        intervention_details["intervention_applied"] = true
-                    }
-                    else if (AIInterventionType == "ai_explanation") {
-                        // Add AI explanation
-                        console.log("Showing explanation")
-                        let explanation_shown: string = !question!["ai_explanation"] ? "No explanation provided" : question!["ai_explanation"]
-                        $("#ai_explanation_span").html(explanation_shown)
-                        $("#ai_explanation_div").show()
-                        intervention_details["explanation_shown"] = explanation_shown
-                        intervention_details["intervention_applied"] = true
-                    } 
-                    else if (AIInterventionType == "none") {
-                        intervention_details["intervention_applied"] = false
-                    }
-                }
-            }
-            
-        } else {
-            displayed_ai_confidence = question!["ai_confidence"]
-            intervention_details["intervention_applied"] = false
-        }
-
     }
-    else if (AIInterventionGoal == "mitigate_overtrust") {
+    else if (AIInterventionType == "confidence_manip") {
+        // Modify AI confidence
 
-        if (user_current_trust_level > 0) {
-            
-            let aldiff_result = await examine_effect_of_trust_on_decision_making()            
-            let al_diff = aldiff_result["al_diff"]
-            console.log("User's likelihood of going with the AI's prediction: ", aldiff_result["actual_trust"]["acceptance_likelihood"])
-            console.log("User's likelihood of going with the AI's prediction with neutral trust: ", aldiff_result["neutral_trust"]["acceptance_likelihood"])
-            console.log("Acceptance Likelihood Diff: ", al_diff)
-            let user_acceptance_likelihood_neutral_trust = aldiff_result["neutral_trust"]["acceptance_likelihood"]
-            intervention_details["acceptance_likelihood_results"] = aldiff_result
-
-            intervention_condition_satisfied = false
-            if (al_diff >= InterventionALDiffThreshold) {
-                intervention_condition_satisfied = true
-            }
-            intervention_details["intervention_condition_satisfied"] = intervention_condition_satisfied
-                
+        if (
+            (AIInterventionGoal == "none") || 
+            (AIInterventionGoal == "mitigate_undertrust" && user_current_trust_level < InterventionTrustThreshold) ||
+            (AIInterventionGoal == "mitigate_overtrust" && user_current_trust_level > InterventionTrustThreshold)
+        ) {
+            console.log("Applying AI confidence manipulation intervention.")
             if (AIInterventionStrategy == "fixed") {
+                // Add InterventionFixedConfChange to AI's confidence
+                // (InterventionFixedConfChange can be negative)
+                let ai_confidence = Number(question!["ai_confidence"].replace("%", "")) / 100
+                let new_confidence = Math.min(1, ai_confidence + InterventionFixedConfChange)
+                new_confidence = Math.max(0.5, new_confidence)
+                displayed_ai_confidence = String(( new_confidence * 100).toFixed(0)) + "%"
+                let confidence_change = (new_confidence - ai_confidence).toFixed(2)
+                console.log("Actual AI confidence: ", question!["ai_confidence"], ", Confidence shown to user: ", displayed_ai_confidence)
 
-                if (AIInterventionType == "confidence_manip") {
-                    // Decrease AI confidence by fixed amount
-                    let ai_confidence = Number(question!["ai_confidence"].replace("%", "")) / 100
-                    let new_confidence = Math.max(0.5, Math.min(1, ai_confidence - InterventionFixedConfChange))
-                    displayed_ai_confidence = String(( new_confidence * 100).toFixed(0)) + "%"
-
-                    intervention_details["conf_actual"] = question!["ai_confidence"]
-                    intervention_details["conf_new"] = displayed_ai_confidence
-                    intervention_details["acceptance_likelihood-actualconf_actualtrust"] = aldiff_result["actual_trust"]["acceptance_likelihood"]
-                    intervention_details["acceptance_likelihood-actualconf_neutraltrust"] = aldiff_result["neutral_trust"]["acceptance_likelihood"]
-                    intervention_details["intervention_applied"] = true
-                } 
-                else if (AIInterventionType == "ai_explanation") {
-                    // Add AI explanation
-                    intervention_details["intervention_applied"] = true
-                } 
-                else if (AIInterventionType == "none") {
-                    intervention_details["intervention_applied"] = false
-                }
-            } 
-            else if (AIInterventionStrategy == "adaptive") {
-                if (intervention_condition_satisfied) {
-                    if (AIInterventionType == "confidence_manip") {
-                        //Find nearest AI confidence with minimizing ALDiff
-                        findnewconf_result = await find_best_aiconf_to_display(user_acceptance_likelihood_neutral_trust)
-                        displayed_ai_confidence = String((findnewconf_result['new_conf_to_display'] * 100).toFixed(0)) + "%"  // Confidence in AI's prediction
-
-                        intervention_details["findnewconf_results"] = findnewconf_result
-                        intervention_details["conf_actual"] =  question!["ai_confidence"]
-                        intervention_details["conf_new"] =  displayed_ai_confidence
-                        intervention_details["acceptance_likelihood-actualconf_actualtrust"] =  aldiff_result["actual_trust"]["acceptance_likelihood"]
-                        intervention_details["acceptance_likelihood-actualconf_neutraltrust"] = aldiff_result["neutral_trust"]["acceptance_likelihood"]
-                        intervention_details["acceptance_likelihood-newconf_actualtrust"] = findnewconf_result["new_conf_acceptance_likelihood"]
-                        intervention_details["intervention_applied"] = true
-                    }
-                    else if (AIInterventionType == "ai_explanation") {
-                        // Add AI explanation
-                        intervention_details["intervention_applied"] = true
-                    } 
-                    else if (AIInterventionType == "none") {
-                        intervention_details["intervention_applied"] = false
-                    }
-                }
+                intervention_details["conf_actual"] = question!["ai_confidence"]
+                intervention_details["conf_displayed"] = displayed_ai_confidence
+                intervention_details["conf_change"] = confidence_change
+                intervention_details["intervention_applied"] = true
             }
-            
+            else if (AIInterventionStrategy == "adaptive") {
+                // TODO: Implement adaptive strategy
+            }
         } else {
-            displayed_ai_confidence = question!["ai_confidence"]
-            intervention_details = {"intervention_applied": false}
+            console.log("Conditions for applying 'confidence manipulation' intervention not satisfied.")
+        }
+
+    } 
+    else if (AIInterventionType == "ai_explanation") {
+        // Add AI explanation
+
+        if (
+            (AIInterventionGoal == "none") ||
+            (AIInterventionGoal == "mitigate_undertrust" && user_current_trust_level < InterventionTrustThreshold) ||
+            (AIInterventionGoal == "mitigate_overtrust" && user_current_trust_level > InterventionTrustThreshold)
+        ) {
+            console.log("Applying AI explanation intervention.")
+            if (AIInterventionStrategy == "fixed") {
+                console.log("Showing explanation")
+                let explanation_shown: string = !question!["ai_explanation"] ? "No explanation provided" : question!["ai_explanation"]
+                $("#ai_explanation_span").html(explanation_shown)
+                $("#ai_explanation_div").show()
+                
+                intervention_details["explanation_shown"] = explanation_shown
+                intervention_details["intervention_applied"] = true
+
+                const ai_explanation_div = document.getElementById("ai_explanation_div")
+                const buttons = [
+                    document.getElementById("button_final_decision_option1"),
+                    document.getElementById("button_final_decision_option2"),
+                ]
+                startTimer(15, ai_explanation_div, buttons, null, "Please read the explanation.")
+            }
+            else if (AIInterventionStrategy == "adaptive") {
+                // TODO: Implement adaptive strategy
+            }
+
+        } else {
+            console.log("Conditions for applying 'AI explanation' intervention not satisfied.")
+        }
+
+    }
+    else if (AIInterventionType == "ai_contrastive_explanation") {
+        // Add AI explanation
+
+        if (
+            (AIInterventionGoal == "none") ||
+            (AIInterventionGoal == "mitigate_undertrust" && user_current_trust_level < InterventionTrustThreshold) ||
+            (AIInterventionGoal == "mitigate_overtrust" && user_current_trust_level > InterventionTrustThreshold)
+        ) {
+            console.log("Applying AI explanation intervention.")
+            if (AIInterventionStrategy == "fixed") {
+                console.log("Showing explanation")
+                let explanation_shown: string = !question!["ai_contrastive_explanation"] ? "No explanation provided" : question!["ai_contrastive_explanation"]
+                $("#ai_contrastive_explanation_span").html(explanation_shown)
+                $("#ai_contrastive_explanation_div").show()
+                
+                intervention_details["explanation_shown"] = explanation_shown
+                intervention_details["intervention_applied"] = true
+
+                const ai_contrastive_explanation_div = document.getElementById("ai_contrastive_explanation_div")
+                const buttons = [
+                    document.getElementById("button_final_decision_option1"),
+                    document.getElementById("button_final_decision_option2"),
+                ]
+                startTimer(10, ai_contrastive_explanation_div, buttons, null, "Please read the explanation.")
+            }
+            else if (AIInterventionStrategy == "adaptive") {
+                // TODO: Implement adaptive strategy
+            }
+
+        } else {
+            console.log("Conditions for applying 'AI explanation' intervention not satisfied.")
         }
 
     }
 
-    intervention_details['trust_level_at_start_of_interaction'] = user_current_trust_level
-    intervention_details['actual_ai_confidence'] = question!["ai_confidence"]
-    intervention_details['displayed_ai_confidence'] = displayed_ai_confidence
+
+    //intervention_details['actual_ai_confidence'] = question!["ai_confidence"]
+    //intervention_details['displayed_ai_confidence'] = displayed_ai_confidence
     console.log("AI Assistance Intervention Details: ", intervention_details)
 
     $("#ai_prediction_span").html("Option " + question!["ai_prediction"])
@@ -632,12 +563,21 @@ async function show_result() {
         $("#user_trust_report_div").show()
     }
 
-    trust_effect_prediction_data = await get_trust_effect()
+    //trust_effect_prediction_data = await get_trust_effect()
 
     //$('#range_val').attr("disabled", "true")
 }
 
 //$("#button_place_bet").on("click", show_result)
+
+function start_timer_for_initial_decision() {
+    const initial_user_decision_div = document.getElementById("initial_user_decision_div")
+    const buttons = [
+        document.getElementById("button_initial_decision_option1"),
+        document.getElementById("button_initial_decision_option2"),
+    ]
+    startTimer(10, initial_user_decision_div, buttons, null, "Please read the question and options closely.")
+}
 
 function next_question() {
     // restore previous state of UI
@@ -667,6 +607,7 @@ function next_question() {
 
     $("#ai_assistance_div").hide()
     $("#ai_explanation_div").hide()
+    $("#ai_contrastive_explanation_div").hide()
     $("#initial_user_confidence_div").hide()
     $("#final_user_decision_div").hide()
     $("#final_user_confidence_div").hide()
@@ -714,6 +655,8 @@ function next_question() {
 
     time_question_start = Date.now()
     $("#progress").text(`Progress: ${question_i + 1} / ${data.length}`)
+
+    start_timer_for_initial_decision()
 }
 
 // get user id and load queue
@@ -738,6 +681,7 @@ if (UIDFromURL != null) {
     }
     globalThis.uid = UID_maybe!
 }
+
 let intervention_allowed_timesteps: number[] = []
 if (globalThis.uid.includes("343")) {
     intervention_allowed_timesteps = [7, 8, 9, 17, 18, 19, 27, 28, 29]
@@ -758,7 +702,7 @@ if (!validInterventionGoals.includes(AIInterventionGoal!)) {
     throw new Error("Invalid AI Assistance Intervention Goal: " + AIInterventionGoal)
 }
 
-const validInterventionTypes = ["none", "dummy", "confidence_manip", "ai_explanation"]
+const validInterventionTypes = ["none", "dummy", "confidence_manip", "ai_explanation", "ai_contrastive_explanation"]
 let AIInterventionType = urlParams.get("intervention_type")
 if (AIInterventionType == null) {AIInterventionType = "none"} 
 if (!validInterventionTypes.includes(AIInterventionType!)) {
@@ -775,6 +719,8 @@ if (!validInterventionStrategies.includes(AIInterventionStrategy!)) {
 // Intervention-specific parameters
 let InterventionALDiffThreshold = Number(urlParams.get("intervention_threshold"))
 if (InterventionALDiffThreshold == null) {InterventionALDiffThreshold = -1}
+let InterventionTrustThreshold = Number(urlParams.get("intervention_trust_threshold"))
+if (InterventionTrustThreshold == null) {InterventionTrustThreshold = 0}
 let InterventionFixedConfChange = Number(urlParams.get("intervention_fixedconfchange"))
 if (InterventionFixedConfChange == null) {InterventionFixedConfChange = 0}
 
@@ -783,6 +729,23 @@ if (useUserReportedTrustVal == null) {useUserReportedTrustVal = false}
 
 let skip_trust_reporting = urlParams.get("skip_trust_reporting") == "true"
 if (skip_trust_reporting == null) {skip_trust_reporting = false}
+
+console.log("AIInterventionGoal: ", AIInterventionGoal)
+console.log("AIInterventionType: ", AIInterventionType)
+console.log("AIInterventionStrategy: ", AIInterventionStrategy)
+console.log("InterventionALDiffThreshold: ", InterventionALDiffThreshold)
+console.log("InterventionTrustThreshold: ", InterventionTrustThreshold)
+console.log("InterventionFixedConfChange: ", InterventionFixedConfChange)
+console.log("useUserReportedTrustVal: ", useUserReportedTrustVal)
+console.log("skip_trust_reporting: ", skip_trust_reporting)
+
+if (AIInterventionGoal == "mitigate_undertrust") {
+    assert(InterventionTrustThreshold <= 0, "Trust threshold for mitigating undertrust cannot be positive.")
+    assert(InterventionFixedConfChange >= 0, "Confidence change for mitigating undertrust cannot be negative.")
+} else if (AIInterventionGoal == "mitigate_overtrust") {
+    assert(InterventionTrustThreshold >= 0, "Trust threshold for mitigating overtrust cannot be negative.")
+    assert(InterventionFixedConfChange <= 0, "Confidence change for mitigating overtrust cannot be positive.")
+}
 
 globalThis.url_data["intervention_goal"] = AIInterventionGoal
 globalThis.url_data["intervention_type"] = AIInterventionType
