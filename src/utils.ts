@@ -11,7 +11,7 @@ function paramsToObject(entries) {
 
 let activeTimer: ReturnType<typeof setInterval> | null = null; // Timer interval
 
-function startTimer(duration, stepDiv, buttons, callback, message) {
+function startTimer(duration, stepDiv, buttons, callback, message, showTimeRemaining = true) {
   if (!ENABLE_TIMER) {
       // If the timer is disabled, enable the buttons immediately
       buttons.forEach(button => button.removeAttribute("disabled"));
@@ -38,12 +38,21 @@ function startTimer(duration, stepDiv, buttons, callback, message) {
   let remainingTime = duration;
 
   // Initial display
-  timerDisplay.textContent = message + ` You can make your selection in ${remainingTime} second(s).`;
+  if (showTimeRemaining){
+    timerDisplay.textContent = message + ` You can make your selection in ${remainingTime} second(s).`;
+  } else {
+    timerDisplay.textContent = message;
+  }
 
   activeTimer = setInterval(() => {
       remainingTime--;
       if (remainingTime >= 0) {
-          timerDisplay.textContent = message + ` You can make your selection in ${remainingTime} second(s).`;
+          if (showTimeRemaining) {
+            timerDisplay.textContent = message + ` You can make your selection in ${remainingTime} second(s).`;
+          } else {
+            timerDisplay.textContent = message;
+          }
+
       } else {
 
           if (activeTimer !== null) {
@@ -63,4 +72,8 @@ function startTimer(duration, stepDiv, buttons, callback, message) {
   }, 1000);
 }
 
-export { paramsToObject, startTimer };
+const wait = (ms: number): Promise<void> => {
+  return new Promise(resolve => setTimeout(resolve, ms));
+};
+
+export { paramsToObject, startTimer, wait };

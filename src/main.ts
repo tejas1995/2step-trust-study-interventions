@@ -2,7 +2,8 @@ import { DEVMODE } from "./globals"
 export var UID: string
 export var MOCKMODE: boolean = false
 import { load_data, log_data } from './connector'
-import { paramsToObject, startTimer } from "./utils"
+import { paramsToObject, startTimer, wait } from "./utils"
+import { parseJSON } from "jquery"
 //import { get_user_trust_effect, get_adjusted_ai_confidence} from "./run_user_models"
 
 let USER_MODELS_ROOT = "https://tejassrinivasan.pythonanywhere.com/"
@@ -174,7 +175,7 @@ async function get_user_decision_prob() {
     let user_initial_confidence = initial_user_confidence
     let ai_confidence = Number(question!["ai_confidence"].replace("%", "")) / 100
     let user_current_trust_level = user_current_estimated_trust_level
-    if (useUserReportedTrustVal) {
+    if (userTrustHeuristic == "user_reported") {
         user_current_trust_level = (user_reported_trust_level - 5) / 2.5
     }
     let user_decision_model_inputs = {
@@ -215,7 +216,7 @@ async function examine_effect_of_trust_on_decision_making() {
     let user_initial_confidence = initial_user_confidence
     let ai_confidence = Number(question!["ai_confidence"].replace("%", "")) / 100
     let user_current_trust_level = user_current_estimated_trust_level
-    if (useUserReportedTrustVal) {
+    if (userTrustHeuristic == "user_reported") {
         user_current_trust_level = (user_reported_trust_level - 5) / 2.5
     }
     let user_decision_model_inputs = {
@@ -255,7 +256,7 @@ async function find_best_aiconf_to_display(user_acceptance_likelihood_neutral_tr
     let user_initial_confidence = initial_user_confidence
     let ai_confidence = Number(question!["ai_confidence"].replace("%", "")) / 100
     let user_current_trust_level = user_current_estimated_trust_level
-    if (useUserReportedTrustVal) {
+    if (userTrustHeuristic == "user_reported") {
         user_current_trust_level = (user_reported_trust_level - 5) / 2.5
     }
     let findnewconf_input_variables = {
@@ -291,7 +292,7 @@ async function get_ai_assistance() {
 
     let displayed_ai_confidence = question!["ai_confidence"]
     let user_current_trust_level = user_current_estimated_trust_level
-    if (useUserReportedTrustVal) {
+    if (userTrustHeuristic == "user_reported") {
         user_current_trust_level = (user_reported_trust_level - 5) / 2.5
         console.log("Using user reported trust value: ", user_reported_trust_level)
     }
@@ -405,7 +406,114 @@ async function get_ai_assistance() {
             console.log("Conditions for applying 'AI explanation' intervention not satisfied.")
         }
 
+    } 
+    else if (AIInterventionType == "both_explanation_types") {
+        assert (AIInterventionGoal == "mitigate_underandovertrust", "Goal for 'both explanation types' intervention should be 'mitigate_underandovertrust'")
+        if (user_current_trust_level < InterventionUndertrustThreshold) {
+            console.log("Applying explanation intervention for undertrust")
+            console.log("Showing explanation")
+            let explanation_shown: string = !question!["ai_explanation"] ? "No explanation provided" : question!["ai_explanation"]
+            $("#ai_explanation_span").html(explanation_shown)
+            $("#ai_explanation_div").show()
+            
+            intervention_details["explanation_shown"] = explanation_shown
+            intervention_details["intervention_applied"] = true
+
+            const ai_explanation_div = document.getElementById("ai_explanation_div")
+            const buttons = [
+                document.getElementById("button_final_decision_option1"),
+                document.getElementById("button_final_decision_option2"),
+            ]
+            startTimer(15, ai_explanation_div, buttons, null, "Please read the explanation.")
+        }
+        else if (user_current_trust_level > InterventionOvertrustThreshold) {
+            console.log("Applying contrastive explanation intervention for overtrust")
+            let explanation_shown: string = !question!["ai_contrastive_explanation"] ? "No explanation provided" : question!["ai_contrastive_explanation"]
+            $("#ai_contrastive_explanation_span").html(explanation_shown)
+            $("#ai_contrastive_explanation_div").show()
+            
+            intervention_details["explanation_shown"] = explanation_shown
+            intervention_details["intervention_applied"] = true
+
+            const ai_contrastive_explanation_div = document.getElementById("ai_contrastive_explanation_div")
+            const buttons = [
+                document.getElementById("button_final_decision_option1"),
+                document.getElementById("button_final_decision_option2"),
+            ]
+            startTimer(10, ai_contrastive_explanation_div, buttons, null, "Please read the explanation.")
+
+        }
     }
+    else if (AIInterventionType == "ai_thinking") {
+        // Add AI thinking
+        if (
+            (AIInterventionGoal == "none") ||
+            (AIInterventionGoal == "mitigate_undertrust" && user_current_trust_level < InterventionTrustThreshold) ||
+            (AIInterventionGoal == "mitigate_overtrust" && user_current_trust_level > InterventionTrustThreshold)
+        ) {
+            console.log("Applying AI thinking intervention.")
+            if (AIInterventionStrategy == "fixed") {
+                console.log("Showing AI thinking")
+                intervention_details["intervention_applied"] = true
+
+                $("#ai_thinking_div").show()
+                await wait(10000)
+                $("#ai_thinking_div").hide()
+            }
+            else if (AIInterventionStrategy == "adaptive") {
+                //TODO: Implement adaptive strategy
+            }
+        }
+    }
+    else if (AIInterventionType == "ai_forced_pause") {
+        // Add AI forced pause
+        if (
+            (AIInterventionGoal == "none") ||
+            (AIInterventionGoal == "mitigate_undertrust" && user_current_trust_level < InterventionTrustThreshold) ||
+            (AIInterventionGoal == "mitigate_overtrust" && user_current_trust_level > InterventionTrustThreshold)
+        ) {
+            console.log("Applying AI forced pause intervention.")
+            if (AIInterventionStrategy == "fixed") {
+                console.log("Showing AI forced pause")
+                intervention_details["intervention_applied"] = true
+
+                const ai_assistance_div = document.getElementById("ai_assistance_div")
+                const buttons = [
+                    document.getElementById("button_final_decision_option1"),
+                    document.getElementById("button_final_decision_option2"),
+                ]    
+                startTimer(10, ai_assistance_div, buttons, null, "Please take some time to carefully consider the AI's suggestion.")
+            }
+            else if (AIInterventionStrategy == "adaptive") {
+                //TODO: Implement adaptive strategy
+            }
+        }
+    } 
+    else if (AIInterventionType == "both_pause_types") {
+        assert (AIInterventionGoal == "mitigate_underandovertrust", "Goal for 'both pause types' intervention should be 'mitigate_underandovertrust'")
+        if (user_current_trust_level < InterventionUndertrustThreshold) {
+            console.log("Applying AI thinking intervention for undertrust")
+            console.log("Showing AI thinking")
+            intervention_details["intervention_applied"] = true
+            $("#ai_thinking_div").show()
+            await wait(10000)
+            $("#ai_thinking_div").hide()
+        } 
+        else if (user_current_trust_level > InterventionOvertrustThreshold) {
+            console.log("Applying AI forced pause intervention for overtrust")
+            console.log("Showing AI forced pause")
+            intervention_details["intervention_applied"] = true
+
+            const ai_assistance_div = document.getElementById("ai_assistance_div")
+            const buttons = [
+                document.getElementById("button_final_decision_option1"),
+                document.getElementById("button_final_decision_option2"),
+            ]    
+            startTimer(10, ai_assistance_div, buttons, null, "Please take some time to carefully consider the AI's suggestion.")
+        }
+    }
+
+
 
 
     //intervention_details['actual_ai_confidence'] = question!["ai_confidence"]
@@ -564,8 +672,24 @@ async function show_result() {
     }
 
     //trust_effect_prediction_data = await get_trust_effect()
+    update_user_trust_level_estimate()
 
     //$('#range_val').attr("disabled", "true")
+}
+
+function update_user_trust_level_estimate() {
+    if (userTrustHeuristic == "smoothed_confweighted_trust") {
+        let ai_confidence = Number(question!["ai_confidence"].replace("%", "")) / 100
+        let trust_effect = question!["ai_prediction"] == question!["correct_option"] ? ai_confidence : -ai_confidence
+        let prev_estimated_trust_level = user_current_estimated_trust_level
+        user_current_estimated_trust_level = smoothingParam * trust_effect + (1-smoothingParam) * user_current_estimated_trust_level
+        trust_effect_prediction_data = {
+            "prev_estimated_trust_level": prev_estimated_trust_level,
+            "trust_effect": trust_effect,
+            "new_estimated_trust_level": user_current_estimated_trust_level,
+        }
+        console.log("Old estimated trust level: " + prev_estimated_trust_level + ", trust effect: " + trust_effect + ", new estimated trust level: " + user_current_estimated_trust_level)
+    }
 }
 
 //$("#button_place_bet").on("click", show_result)
@@ -608,6 +732,7 @@ function next_question() {
     $("#ai_assistance_div").hide()
     $("#ai_explanation_div").hide()
     $("#ai_contrastive_explanation_div").hide()
+    $("#ai_thinking_div").hide()
     $("#initial_user_confidence_div").hide()
     $("#final_user_decision_div").hide()
     $("#final_user_confidence_div").hide()
@@ -695,14 +820,14 @@ if (globalThis.uid.includes("343")) {
 //let AIInterventionType = urlParams.get("intervention_type")
 //let InterventionALDiffThreshold = Number(urlParams.get("intervention_threshold"))
 //let InterventionFixedConfIncrease = Number(urlParams.get("intervention_fixedconfincrease"))
-const validInterventionGoals = ["none", "mitigate_undertrust", "mitigate_overtrust"]
+const validInterventionGoals = ["none", "mitigate_undertrust", "mitigate_overtrust", "mitigate_underandovertrust"]
 let AIInterventionGoal = urlParams.get("intervention_goal")
 if (AIInterventionGoal == null) {AIInterventionGoal = "none"}
 if (!validInterventionGoals.includes(AIInterventionGoal!)) {
     throw new Error("Invalid AI Assistance Intervention Goal: " + AIInterventionGoal)
 }
 
-const validInterventionTypes = ["none", "dummy", "confidence_manip", "ai_explanation", "ai_contrastive_explanation"]
+const validInterventionTypes = ["none", "dummy", "confidence_manip", "ai_explanation", "ai_contrastive_explanation", "both_explanation_types", "ai_thinking", "ai_forced_pause", "both_pause_types"]
 let AIInterventionType = urlParams.get("intervention_type")
 if (AIInterventionType == null) {AIInterventionType = "none"} 
 if (!validInterventionTypes.includes(AIInterventionType!)) {
@@ -723,9 +848,15 @@ let InterventionTrustThreshold = Number(urlParams.get("intervention_trust_thresh
 if (InterventionTrustThreshold == null) {InterventionTrustThreshold = 0}
 let InterventionFixedConfChange = Number(urlParams.get("intervention_fixedconfchange"))
 if (InterventionFixedConfChange == null) {InterventionFixedConfChange = 0}
+let InterventionUndertrustThreshold = Number(urlParams.get("intervention_undertrust_threshold"))
+if (InterventionUndertrustThreshold == null) {InterventionUndertrustThreshold = InterventionTrustThreshold}
+let InterventionOvertrustThreshold = Number(urlParams.get("intervention_overtrust_threshold"))
+if (InterventionOvertrustThreshold == null) {InterventionOvertrustThreshold = InterventionTrustThreshold}
 
-let useUserReportedTrustVal = urlParams.get("use_user_reported_trust_level") == "true"
-if (useUserReportedTrustVal == null) {useUserReportedTrustVal = false}
+let userTrustHeuristic = urlParams.get("user_trust_heuristic")
+if (userTrustHeuristic == null) {userTrustHeuristic = "user_reported"}
+let smoothingParam = Number(urlParams.get("smoothing_param"))
+if (smoothingParam == null) {smoothingParam = 1}
 
 let skip_trust_reporting = urlParams.get("skip_trust_reporting") == "true"
 if (skip_trust_reporting == null) {skip_trust_reporting = false}
@@ -735,8 +866,10 @@ console.log("AIInterventionType: ", AIInterventionType)
 console.log("AIInterventionStrategy: ", AIInterventionStrategy)
 console.log("InterventionALDiffThreshold: ", InterventionALDiffThreshold)
 console.log("InterventionTrustThreshold: ", InterventionTrustThreshold)
+console.log("InterventionUndertrustThreshold: ", InterventionUndertrustThreshold)
+console.log("InterventionOvertrustThreshold: ", InterventionOvertrustThreshold)
 console.log("InterventionFixedConfChange: ", InterventionFixedConfChange)
-console.log("useUserReportedTrustVal: ", useUserReportedTrustVal)
+console.log("userTrustHeuristic: ", userTrustHeuristic)
 console.log("skip_trust_reporting: ", skip_trust_reporting)
 
 if (AIInterventionGoal == "mitigate_undertrust") {
@@ -752,7 +885,9 @@ globalThis.url_data["intervention_type"] = AIInterventionType
 globalThis.url_data["intervention_strategy"] = AIInterventionStrategy
 globalThis.url_data["intervention_threshold"] = InterventionALDiffThreshold
 globalThis.url_data["intervention_fixedconfchange"] = InterventionFixedConfChange
-globalThis.url_data["use_user_reported_trust_level"] = useUserReportedTrustVal
+globalThis.url_data["user_trust_heuristic"] = userTrustHeuristic
+globalThis.url_data["skip_trust_reporting"] = skip_trust_reporting
+globalThis.url_data["smoothing_param"] = smoothingParam
 
 // version for paper
 if (globalThis.uid.startsWith("demo_paper")) {
