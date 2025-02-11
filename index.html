@@ -107,6 +107,27 @@
                 <img src="img/instructions_5_math.png"> -->
             </div>
         </div>
+        
+        
+        <div class="main_box" id="pre_study_survey" style="display: none">
+            <h3>Pre-study survey</h3>
+            <p>Before we start, please answer the following questions:</p>
+            <!-- Make a survey with 3 mandatory questions -->
+            <p><b>Please rate your prior experience with AI assistants</b> (examples include ChatGPT, Copilot, Gemini):</p>
+            <input type="radio" id="ai_familiarity_1" name="ai_familiarity" value="1"> I use AI assistants once a week or more.<br>
+            <input type="radio" id="ai_familiarity_2" name="ai_familiarity" value="2"> I use AI assistants about once a month.<br>
+            <input type="radio" id="ai_familiarity_3" name="ai_familiarity" value="3"> I know what AI assistants are, but I don't use them.<br>
+            <input type="radio" id="ai_familiarity_4" name="ai_familiarity" value="4"> I do not know what AI assistants are.<br>
+
+            <p><b>Do you use AI systems for checking facts/asking trivia questions?</b></p>
+            <input type="radio" id="ai_usage_1" name="ai_usage" value="1"> Yes, I regularly use AI systems for checking facts/asking trivia questions.<br>
+            <input type="radio" id="ai_usage_2" name="ai_usage" value="2"> I have used AI systems for checking facts/asking trivia questions, but not regularly.<br>
+            <input type="radio" id="ai_usage_3" name="ai_usage" value="3"> I have never used AI systems for checking facts/asking trivia questions.<br>
+
+            <br>
+            <input id="button_start_study" type="button" value="Start study" style="margin-bottom: 10px">
+            <p style="display: none; color: red;" id="error_message_survey">Please answer all questions before starting the study.</p>
+        </div>
 
         <div class="main_box" id="main_box_experiment" style="display: none">
             <h3>Question: <span id="question_span"></span></h3>
